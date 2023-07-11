@@ -14,7 +14,7 @@
     <div class="header">
         <div class="details">
             <h1>Joseph Jacob Malete</h1>
-            <h3 class="description">Full Stack Web developer</h3>
+            <h3 class="description">Web developer</h3>
         </div>
         <div class="nav">
             <a href="#a" onclick="aboutMe()"><i class="fa fa-user"></i> About me</a>
@@ -29,12 +29,13 @@
         </h1>
         <div id="about">
             <img src="images/profile.gif" width="20%" class="profile">
-            <p>As a Web developer with 2 years experience in front-end, I was able to use my creativity<br> and technical skills to develop visually appealing and responsive sites for small enterprises in my community.
-                <br> Having proven my reliability, strong work ethic and passion for web development, I am willing to move up the rank by pursuing new companies to work with to grow my skills even further.
+            <p>I am a hard-working web developer with two years of experience (Freelancing) .<br> My primary objective is to apply creativity and technical skills to build visually appealing, responsive and functional sites for clients. I am a very disciplined
+                person with a good work ethic. I also enjoy working with a team of like-minded individuals. I am currently open for learning opportunities to help advance my skills, I believe that will help me achieve my end goal of being a full-stack
+                developer.
             </p>
         </div>
         <div id="skills">
-            <h1>Technical skills</h1>
+            <p>Technical skills</p>
             <div class="skillsPanel-display ">
                 <div class="skillsPanel"><i class="fa fa-code"></i><br>Html</div>
                 <div class="skillsPanel"><i class="fa fa-code"></i><br>Css</div>
@@ -44,7 +45,7 @@
                 <div class="skillsPanel"><i class="fa fa-terminal"></i><br>Bash</div>
                 <div class="skillsPanel"><i class="fa fa-drafting-compass"></i><br>Photoshop</div>
             </div>
-            <h1>Soft skills</h1>
+            <p>Soft skills</p>
             <div class="skillsPanel-display ">
                 <div class="skillsPanel"><i class="fa fa-message"></i><br>Communication</div>
                 <div class="skillsPanel"><i class="fa fa-people-pulling"></i><br>Team work</div>
@@ -55,8 +56,7 @@
             </div>
         </div>
         <div id="portfolio">
-            <p>I have worked with the following companies in designing <br>and developing their sites.
-                <br><i>You can click on the images to view the sites.</i></p>
+
             <div class="portfolioPanel-display">
                 <div class="portfolioPanel">
                     <a href="https://www.helgeoprintshop.co.za" target="_blank"><img src="images/helgeoprintshop.png" width="80%"></a>
@@ -71,14 +71,142 @@
         </div>
         <div id="contact">
             <div class="contact-me">
-                <div class="contactMe"><i class="fa fa-phone"></i> 081 819 8122
-                </div>
-                <div class="contactMe"><i class="fa fa-envelope"></i> josephmalete75@gmail.com</div>
-                <div class="contactMe"><i class="fa fa-location-dot"></i> 2121 Leseding<br>Bela-Bela<br>0480<br>Limpopo Province<br>South Africa
-                </div>
+                <form action="https://formsubmit.co/16e85c0a36231f26cd456fb5e3e24b00" method="POST">
+                    <div class="Personal-details">
+                        <input type="text" placeholder="Name" name="Name" class="name" required>
+                        <input type="text" placeholder="Gmail" name="Email" class="name" required>
+                    </div>
+                    <div class="mail">
+                        <input type="text" placeholder="Subject" name="_subject" class="subject" required>
+                        <textarea placeholder="type message here..." name="message" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://josephmalete1997.github.io/Simple-website/thankyou.html">
+                        <button class="send-button">Send</button>
+                        <div class="invalid-email">
+                            <h1>Invalid gmail address!</h1>
+                            <p class="error-response"></p>
+                        </div>
+                    </div>
+                </form>
+
             </div>
-            <hr>
-            <p>I am in the following social platforms:</p>
+            <style>
+                /* Invalid email */
+                
+                .invalid-email {
+                    background: rgb(235, 118, 118);
+                    color: white;
+                    width: 100%;
+                    height: auto;
+                    margin-top: 2%;
+                    display: none;
+                    text-align: center;
+                }
+                
+                .invalid-email p {
+                    color: white;
+                }
+                /*  */
+                
+                .Personal-details {
+                    width: 90%;
+                    display: flex;
+                    margin: auto;
+                }
+                
+                .name {
+                    width: 95%;
+                    margin: auto;
+                    margin-bottom: 2%;
+                    border: 1px solid rgb(84, 104, 160);
+                    color: rgb(121, 136, 177);
+                    font-size: 24px;
+                    padding-left: 20px;
+                }
+                
+                .name:nth-child(2) {
+                    margin-left: 2%;
+                }
+                
+                .subject {
+                    margin-bottom: 2%;
+                    border: 1px solid rgb(84, 104, 160);
+                    font-size: 24px;
+                    padding-left: 20px;
+                    color: rgb(121, 136, 177);
+                }
+                
+                textarea {
+                    height: 100px;
+                    margin-bottom: 2%;
+                    border: 1px solid rgb(84, 104, 160);
+                    font-size: 24px;
+                    padding-left: 20px;
+                    color: rgb(121, 136, 177);
+                }
+                
+                form {
+                    width: 80%;
+                    margin: auto;
+                }
+                
+                .send-button {
+                    background: rgb(84, 104, 160);
+                    border: none;
+                    font-size: 24px;
+                    color: white;
+                    cursor: pointer;
+                }
+                /* .send-button:hover {
+                    background: white;
+                    border: 1px solid rgb(84, 104, 160);
+                    font-size: 24px;
+                    color: rgb(84, 104, 160);
+                    cursor: pointer;
+                } */
+                
+                .mail {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto;
+                }
+                
+                @media screen and (max-width:600px) {
+                    .mail {
+                        width: 90%;
+                    }
+                }
+            </style>
+            <script>
+                //validate email
+                const emailAddress = document.querySelectorAll('.name');
+                const errorResponse = document.querySelector('.error-response');
+                const InvalidMail = document.querySelector('.invalid-email');
+                const sendButton = document.querySelector('.send-button');
+                const randomNumber = Math.floor(Math.random() * 100);
+
+                emailAddress[1].addEventListener('change', InvalidEmail);
+
+                function InvalidEmail() {
+                    for (let i = 0; i < emailAddress[1].value.length; i++) {
+                        if (!emailAddress[1].value.includes('@gmail.com')) {
+                            InvalidMail.style.display = "block";
+                            errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid gmail address
+                            <br><br> E.g ${emailAddress[0].value}${randomNumber}@gmail.com`;
+                            sendButton.disabled = true;
+                            break;
+                        } else {
+                            InvalidMail.style.display = "none";
+                            sendButton.disabled = false;
+                            break;
+                        }
+                    }
+                }
+            </script>
+
+            <br><br>
+            <p>Follow me on</p>
             <div class="socials">
                 <a href="https://www.instagram.com/joseph_jacob_malete/" target="_blank"><i class="fa fa-instagram"></i></a>
                 <a href="https://web.facebook.com/josephjacobmalete.malete" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -101,5 +229,7 @@
     </div>
     <p>&copy;2023</p>
 </footer>
+
+</html>
 
 </html>

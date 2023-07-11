@@ -7,14 +7,26 @@ const title = document.querySelector('.title');
 const active = document.querySelectorAll('.nav a');
 const activeIcon = document.querySelectorAll('.nav a .fa');
 const colorBlueDark = "rgb(84, 104, 160)";
-const colorBlue = "rgb(144, 208, 228)";
-active[0].style.color = colorBlue;
-activeIcon[0].style.color = colorBlue;
+const colorBlue = "rgb(93, 196, 150)";
+//Nav position 1
+active[0].style.borderBottom = "5px solid rgb(84, 104, 160)";
+active[0].style.height = "40px";
+active[0].style.paddingTop = "10px";
+//Nav position 2
+active[1].style.height = "40px";
+active[1].style.paddingTop = "10px";
+//Nav position 3
+active[2].style.height = "40px";
+active[2].style.paddingTop = "10px";
+//Nav position 4
+active[3].style.height = "40px";
+active[3].style.paddingTop = "10px";
+
 
 const titles = {
     "about": ` About me`,
     "skills": `My skills`,
-    "portfolio": ` My portfolio`,
+    "portfolio": ` Projects`,
     "contact": `Get In Touch`
 }
 title.innerHTML = titles["about"];
@@ -25,16 +37,12 @@ function aboutMe() {
     portfolio.style.display = "none";
     contact.style.display = "none";
     title.innerHTML = titles["about"];
-    active[0].style.color = colorBlue
-    active[1].style.color = colorBlueDark;
-    active[2].style.color = colorBlueDark;
-    active[3].style.color = colorBlueDark;
-    //Icons link
-    activeIcon[0].style.color = colorBlue;
-    activeIcon[1].style.color = colorBlueDark;
-    activeIcon[2].style.color = colorBlueDark;
-    activeIcon[3].style.color = colorBlueDark;
     document.title = "About me";
+    //Nav position
+    active[0].style.borderBottom = "5px solid rgb(84, 104, 160)";
+    active[1].style.borderBottom = "none";
+    active[2].style.borderBottom = "none";
+    active[3].style.borderBottom = "none";
 }
 
 function mySkills() {
@@ -43,16 +51,12 @@ function mySkills() {
     portfolio.style.display = "none";
     contact.style.display = "none";
     title.innerHTML = titles["skills"];
-    active[1].style.color = colorBlue;
-    active[0].style.color = colorBlueDark;
-    active[2].style.color = colorBlueDark;
-    active[3].style.color = colorBlueDark;
-    //Icons link
-    activeIcon[0].style.color = colorBlueDark;
-    activeIcon[1].style.color = colorBlue;
-    activeIcon[2].style.color = colorBlueDark;
-    activeIcon[3].style.color = colorBlueDark;
     document.title = "Skills";
+    //Nav position
+    active[1].style.borderBottom = "5px solid rgb(84, 104, 160)";
+    active[0].style.borderBottom = "none";
+    active[2].style.borderBottom = "none";
+    active[3].style.borderBottom = "none";
 }
 
 function myPortfolio() {
@@ -61,16 +65,13 @@ function myPortfolio() {
     portfolio.style.display = "block";
     contact.style.display = "none";
     title.innerHTML = titles["portfolio"];
-    active[2].style.color = colorBlue;
-    active[0].style.color = colorBlueDark;
-    active[1].style.color = colorBlueDark;
-    active[3].style.color = colorBlueDark;
-    //Icons link
-    activeIcon[0].style.color = colorBlueDark;
-    activeIcon[1].style.color = colorBlueDark;
-    activeIcon[2].style.color = colorBlue;
-    activeIcon[3].style.color = colorBlueDark;
+
     document.title = "Portfolio";
+    //Nav position
+    active[2].style.borderBottom = "5px solid rgb(84, 104, 160)";
+    active[1].style.borderBottom = "none";
+    active[0].style.borderBottom = "none";
+    active[3].style.borderBottom = "none";
 }
 
 function myContact() {
@@ -79,14 +80,11 @@ function myContact() {
     portfolio.style.display = "none";
     contact.style.display = "block";
     title.innerHTML = titles["contact"];
-    active[3].style.color = colorBlue;
-    active[0].style.color = colorBlueDark;
-    active[1].style.color = colorBlueDark;
-    active[2].style.color = colorBlueDark;
-    //Icons link
-    activeIcon[0].style.color = colorBlueDark;
-    activeIcon[1].style.color = colorBlueDark;
-    activeIcon[2].style.color = colorBlueDark;
-    activeIcon[3].style.color = colorBlue;
+
     document.title = "Contact";
+    //Nav position
+    active[3].style.borderBottom = "5px solid rgb(84, 104, 160)";
+    active[1].style.borderBottom = "none";
+    active[2].style.borderBottom = "none";
+    active[0].style.borderBottom = "none";
 }

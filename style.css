@@ -64,12 +64,12 @@ body {
     padding: 2.5%;
     margin-top: 200px;
     margin-bottom: 50px;
-    /* box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.1); */
+    box-shadow: 0.2px 0.2px 0.5px rgb(0, 0, 0, 0.1);
     border: 0.5px solid rgb(226, 226, 226);
 }
 
 .content p {
-    color: rgb(121, 146, 175);
+    color: rgb(92, 114, 161);
     text-align: center;
     font-size: 20px;
     line-height: 1.4em;
@@ -77,7 +77,7 @@ body {
 }
 
 .left-border {
-    border-left: 4px solid rgb(190, 216, 255);
+    border-left: 4px solid rgb(93, 196, 110);
     border-radius: 4px;
     background: rgb(244, 253, 255);
     box-shadow: 4px 4px 5px rgb(0, 0, 0, 0.13);
@@ -88,14 +88,10 @@ body {
 .title {
     opacity: 1;
     text-align: center;
-    color: rgb(166, 211, 235);
+    color: rgb(84, 104, 160);
     z-index: 10;
     font-family: cursive;
     margin-top: -20px;
-}
-
-.title .fa {
-    color: rgb(166, 211, 235);
 }
 
 .fa {
@@ -125,6 +121,11 @@ body {
 
 #about p {
     margin-top: 5px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    word-spacing: 5px;
 }
 
 #skills,
@@ -146,6 +147,7 @@ body {
 .description {
     font-family: 'Courier New', Courier, monospace;
     color: white;
+    font-size: 24px;
 }
 
 
@@ -287,7 +289,8 @@ body {
 .profile {
     border-radius: 50%;
     text-align: center;
-    margin-left: 40%;
+    margin-left: 35%;
+    width: 30%;
 }
 
 .socials {
@@ -305,7 +308,7 @@ body {
 
 .socials a .fa {
     color: rgb(64, 83, 136);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .contact-me {
@@ -313,6 +316,7 @@ body {
     flex-direction: row;
     font-family: Arial;
     margin: auto;
+    width: 100%;
 }
 
 .contact-me .fa {
@@ -348,13 +352,11 @@ footer {
     /* border-radius: 0px 0px 200px 200px; */
 }
 
-.footer-icons {}
-
 
 /* Responsive */
 
 @media screen and (max-width:600px) {
-    /* Headand nav */
+    /* Head and nav */
     .header .nav {
         position: absolute;
         width: 96%;
