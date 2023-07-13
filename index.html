@@ -194,7 +194,7 @@
 
                     if (!emailAddress[1].value.match(email)) {
                         InvalidMail.style.display = "block";
-                        errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid gmail address
+                        errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid email address
                             <br><br> E.g ${emailAddress[0].value}${randomNumber}@gmail.com`;
                         sendButton.disabled = true;
                     } else {
