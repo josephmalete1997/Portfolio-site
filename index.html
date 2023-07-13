@@ -38,8 +38,8 @@
             <p>Technical skills</p>
             <div class="skillsPanel-display ">
                 <div class="skillsPanel"><i class="fa fa-code"></i><br>Html</div>
-                <div class="skillsPanel"><i class="fa fa-code"></i><br>Css</div>
-                <div class="skillsPanel"><i class="fa fa-code"></i><br>Javascript</div>
+                <div class="skillsPanel"><i class="fa fa-laptop-code"></i><br>Css</div>
+                <div class="skillsPanel"><i class="fa fa-file-code"></i><br>Javascript</div>
                 <div class="skillsPanel"><i class="fa fa-github"></i><br>Github</div>
                 <div class="skillsPanel"><i class="fa fa-solid fa-code-merge"></i><br>Git</div>
                 <div class="skillsPanel"><i class="fa fa-terminal"></i><br>Bash</div>
@@ -74,7 +74,7 @@
                 <form action="https://formsubmit.co/16e85c0a36231f26cd456fb5e3e24b00" method="POST">
                     <div class="Personal-details">
                         <input type="text" placeholder="Name" name="Name" class="name" required>
-                        <input type="text" placeholder="Gmail" name="Email" class="name" required>
+                        <input type="text" placeholder="Email" name="Email" class="name" required>
                     </div>
                     <div class="mail">
                         <input type="text" placeholder="Subject" name="_subject" class="subject" required>
@@ -83,7 +83,7 @@
                         <input type="hidden" name="_next" value="https://josephmalete1997.github.io/Simple-website/thankyou.html">
                         <button class="send-button">Send</button>
                         <div class="invalid-email">
-                            <h1>Invalid gmail address!</h1>
+                            <h1>Invalid email address!</h1>
                             <p class="error-response"></p>
                         </div>
                     </div>
@@ -187,20 +187,18 @@
                 const randomNumber = Math.floor(Math.random() * 100);
 
                 emailAddress[1].addEventListener('change', InvalidEmail);
+                const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
                 function InvalidEmail() {
-                    for (let i = 0; i < emailAddress[1].value.length; i++) {
-                        if (!emailAddress[1].value.includes('@gmail.com')) {
-                            InvalidMail.style.display = "block";
-                            errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid gmail address
+
+                    if (!emailAddress[1].value.match(email)) {
+                        InvalidMail.style.display = "block";
+                        errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid gmail address
                             <br><br> E.g ${emailAddress[0].value}${randomNumber}@gmail.com`;
-                            sendButton.disabled = true;
-                            break;
-                        } else {
-                            InvalidMail.style.display = "none";
-                            sendButton.disabled = false;
-                            break;
-                        }
+                        sendButton.disabled = true;
+                    } else {
+                        InvalidMail.style.display = "none";
+                        sendButton.disabled = false;
                     }
                 }
             </script>
