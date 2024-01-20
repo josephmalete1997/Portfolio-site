@@ -1,232 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/profile.gif">
-    <script src="https://kit.fontawesome.com/062d0051ac.js" crossorigin="anonymous"></script>
-    <title>Joseph Malete</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="shortcut icon" href="images/profile.gif">
+        <!-- <script src="https://kit.fontawesome.com/062d0051ac.js" crossorigin="anonymous"></script> -->
 
-<body>
-    <div class="header">
-        <div class="details">
-            <h1>Joseph Jacob Malete</h1>
-            <h3 class="description">Web developer</h3>
-        </div>
-        <div class="nav">
-            <a href="#a" onclick="aboutMe()"><i class="fa fa-user"></i> About me</a>
-            <a href="#a" onclick="mySkills()"><i class="fa fa-tools"></i> Skills</a>
-            <a href="#a" onclick="myPortfolio()"><i class="fa fa-book"></i> Portfolio</a>
-            <a href="#a" onclick="myContact()"><i class="fa fa-phone"></i> Contact</a>
-        </div>
-    </div>
 
-    <div class="content">
-        <h1 class="title">About me
-        </h1>
-        <div id="about">
-            <img src="images/profile.gif" width="20%" class="profile">
-            <p>I am a hard-working web developer with two years of experience freelancing. My primary objective is to apply creativity and technical skills to build visually appealing, responsive, and functional sites. I am a very disciplined person with
-                a good work ethic. I also enjoy working with a team of like-minded individuals. I am currently open to learning opportunities to advance my skills. I believe that will help me achieve my end goal of being a full-stack developer.
-            </p>
-        </div>
-        <div id="skills">
-            <p>Technical skills</p>
-            <div class="skillsPanel-display ">
-                <div class="skillsPanel"><i class="fa fa-code"></i><br>Html</div>
-                <div class="skillsPanel"><i class="fa fa-laptop-code"></i><br>Css</div>
-                <div class="skillsPanel"><i class="fa fa-file-code"></i><br>Javascript</div>
-                <div class="skillsPanel"><i class="fa fa-github"></i><br>Github</div>
-                <div class="skillsPanel"><i class="fa fa-solid fa-code-merge"></i><br>Git</div>
-                <div class="skillsPanel"><i class="fa fa-terminal"></i><br>Bash</div>
-                <div class="skillsPanel"><i class="fa fa-drafting-compass"></i><br>Photoshop</div>
+
+        <title>Joseph Malete</title>
+    </head>
+
+    <body>
+        <div class="open-scene">
+            <div class="skip">Skip here !</div>
+            <img src="img2x.png" width="30%">
+            <div class="intro-text">
+                <span class="intro"></span><span class="blink">.</span>
             </div>
-            <p>Soft skills</p>
-            <div class="skillsPanel-display ">
-                <div class="skillsPanel"><i class="fa fa-message"></i><br>Communication</div>
-                <div class="skillsPanel"><i class="fa fa-people-pulling"></i><br>Team work</div>
-                <div class="skillsPanel"><i class="fa fa-palette"></i><br>Creativity</div>
-                <div class="skillsPanel"><i class="fa fa-person-chalkboard"></i><br>Problem solving</div>
-                <div class="skillsPanel"><i class="fa fa-clock"></i><br>Time management</div>
-                <div class="skillsPanel"><i class="fa fa-brain"></i><br>Emotional intelligence</div>
-            </div>
+            <div class="loading"></div>
         </div>
-        <div id="portfolio">
 
-            <div class="portfolioPanel-display">
-                <div class="portfolioPanel">
-                    <a href="https://www.helgeoprintshop.co.za" target="_blank"><img src="images/helgeoprintshop.png" width="80%"></a>
+        </div>
+        <div class="header">
+            <div class="nav">
+                <div class="names">
+                    <h2>Joseph Malete</h2>
+                    <p>full stack Web developer</p>
                 </div>
-                <div class="portfolioPanel">
-                    <a href="https://www.helgeo.co.za" target="_blank"><img src="images/helgeo.png" width="80%"></a>
+            </div>
+            <div class="socials-icons">
+                <div class="socials-inner">
+                    <div class="tool-tip">Facebook</div>
+                    <img src="css/icons/facebook.svg">
                 </div>
-                <div class="portfolioPanel">
-                    <a href="https://www.belabelaguesthouse.co.za" target="_blank"><img src="images/bbgh.jpg" width="35%"></a>
+                <div class="socials-inner">
+                    <div class="tool-tip">Github</div>
+                    <img src="css/icons/github.svg">
+                </div>
+                <div class="socials-inner">
+                    <div class="tool-tip">Instagram</div>
+                    <img src="css/icons/instagram.svg">
                 </div>
             </div>
         </div>
-        <div id="contact">
-            <div class="contact-me">
-                <form action="https://formsubmit.co/16e85c0a36231f26cd456fb5e3e24b00" method="POST">
-                    <div class="Personal-details">
-                        <input type="text" placeholder="Name" name="Name" class="name" required>
-                        <input type="text" placeholder="Email" name="Email" class="name" required>
+
+        <div class="side-nav">
+            <div class="menu">
+                <div class="menu-one">
+                    <div class="menu-inside mi"></div>
+                    <div class="menu-inside mi"></div>
+                    <div class="menu-inside mi"></div>
+                </div>
+                <div class="menu-one">
+                    <div class="menu-inside mi"></div>
+                    <div class="menu-inside mi"></div>
+                    <div class="menu-inside mi"></div>
+                </div>
+            </div>
+
+            <a href="#about"> About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio"> Portfolio</a>
+            <a href="#contact"> Contact</a>
+        </div>
+
+        <div class="content">
+
+            <div class="content-inner">
+                <div id="about">
+                    <h1 class="title">About me</h1>
+
+
+                    <div class="text-image">
+                        <div class="welcome">
+
+                            <div class="over-layer">Hi, welcome <br>to my digital profile</div>
+                            <div class="page-flip"></div>
+                            <div class="pin"></div>
+                        </div>
+                        <!-- <img src="images/profile.gif" width="20%" class="profile"> -->
+                        <p>My name is Joseph.I am a hard-working full stack developer based in Bela-Bela,Limpopo
+                            province,South Africa.
+                            <br>
+                            <br>
+                            My primary
+                            objective
+                            is to apply creativity and technical skills to build visually appealing, responsive, and
+                            functional sites. I am a very disciplined person with
+                            a good work ethic. I also enjoy working with a team of like-minded individuals. I am
+                            currently
+                            open to learning opportunities to advance my skills.
+                        <div class="download-cv d">Download CV</div>
+                        <div class="download-cv v">View CV</div>
+                        </p>
+
+
                     </div>
-                    <div class="mail">
-                        <input type="text" placeholder="Subject" name="_subject" class="subject" required>
-                        <textarea placeholder="type message here..." name="message" required></textarea>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://josephmalete1997.github.io/Simple-website/thankyou.html">
-                        <button class="send-button">Send</button>
-                        <div class="invalid-email">
-                            <h1>Invalid email address!</h1>
-                            <p class="error-response"></p>
+                    <h2 class="hobbies-and-interests">Hobbies and interest</h2>
+                    <div class="panel-one">
+                        <div class="welcome hobbies">
+                            <div class="over-layer">
+                                <img src="css/icons/activity.svg" width="10%"> Soccer
+                            </div>
+                            <div class="page-flip"></div>
+                            <div class="pin"></div>
+                        </div>
+                        <div class="welcome hobbies">
+                            <div class="over-layer">
+                                <img src="css/icons/book-half.svg" width="10%"> Reading
+                            </div>
+                            <div class="page-flip"></div>
+                            <div class="pin"></div>
+                        </div>
+
+                        <div class="welcome hobbies">
+                            <div class="over-layer">
+                                <img src="css/icons/music-note-beamed.svg" width="10%"> Music
+                            </div>
+                            <div class="page-flip"></div>
+                            <div class="pin"></div>
+                        </div>
+                        <div class="welcome hobbies">
+                            <div class="over-layer">
+                                <img src="css/icons/paint-bucket.svg" width="10%"> Art
+                            </div>
+                            <div class="page-flip"></div>
+                            <div class="pin"></div>
                         </div>
                     </div>
-                </form>
 
-            </div>
-            <style>
-                /* Invalid email */
-                
-                .invalid-email {
-                    background: rgb(235, 118, 118);
-                    color: white;
-                    width: 100%;
-                    height: auto;
-                    margin-top: 2%;
-                    display: none;
-                    text-align: center;
-                }
-                
-                .invalid-email p {
-                    color: white;
-                }
-                /*  */
-                
-                .Personal-details {
-                    width: 90%;
-                    display: flex;
-                    margin: auto;
-                }
-                
-                .name {
-                    width: 95%;
-                    margin: auto;
-                    margin-bottom: 2%;
-                    border: 1px solid rgb(84, 104, 160);
-                    color: rgb(121, 136, 177);
-                    font-size: 24px;
-                    padding-left: 20px;
-                }
-                
-                .name:nth-child(2) {
-                    margin-left: 2%;
-                }
-                
-                .subject {
-                    margin-bottom: 2%;
-                    border: 1px solid rgb(84, 104, 160);
-                    font-size: 24px;
-                    padding-left: 20px;
-                    color: rgb(121, 136, 177);
-                }
-                
-                textarea {
-                    height: 100px;
-                    margin-bottom: 2%;
-                    border: 1px solid rgb(84, 104, 160);
-                    font-size: 24px;
-                    padding-left: 20px;
-                    color: rgb(121, 136, 177);
-                }
-                
-                form {
-                    width: 80%;
-                    margin: auto;
-                }
-                
-                .send-button {
-                    background: rgb(84, 104, 160);
-                    border: none;
-                    font-size: 24px;
-                    color: white;
-                    cursor: pointer;
-                }
-                /* .send-button:hover {
+                    <h2 class="education">Education</h2>
+                    <div class="education-grid">
+                        <div class="schools-items">
+                            <div class="schools">
+                                <p>2017</p>
+                                <h2>Grade 12 <em>(Matric)</em></h2>
+                                <p>Raeleng secondary school</p>
+                                <span class="status complete">Complete...</span>
+                            </div>
+                            <div class="schools">
+                                <p>2018 - 2018</p>
+                                <h2>Bachelor Of Accounting <em>(CA stream)</em></h2>
+                                <p>University Of Johannesburg</p>
+                                <span class="status incomplete">Incomplete...</span>
+                            </div>
+                            <div class="schools">
+                                <p>2020 - 2022</p>
+                                <h2>Bcom Chartered Accountancy</h2>
+                                <p>North West University</p>
+                                <span class="status incomplete">Incomplete...</span>
+                            </div>
+                        </div>
+
+                        <img src="images/edu.png" class="edu" width="100%">
+                    </div>
+
+                    <div id="skills">
+                        <h1 class="title">Skills</h1>
+
+                        <div class="align-panel">
+                            <div class="panel-one">
+                                <p>Technical</p>
+                                <div class="skillsPanel-display">
+                                    <div class="skillsPanel"><img src="css/icons/code.svg"><br>Html</div>
+                                    <div class="skillsPanel"><i class="fa fa-laptop-code"></i><br>Css</div>
+                                    <div class="skillsPanel"><i class="fa fa-file-code"></i><br>Javascript</div>
+                                    <div class="skillsPanel"><i class="fa fa-github"></i><br>Github</div>
+                                    <div class="skillsPanel"><i class="fa fa-solid fa-code-merge"></i><br>Git</div>
+                                    <div class="skillsPanel"><i class="fa fa-terminal"></i><br>Bash</div>
+                                    <div class="skillsPanel"><i class="fa fa-drafting-compass"></i><br>Photoshop
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-one">
+                                <p>Soft</p>
+                                <div class="skillsPanel-display ">
+                                    <div class="skillsPanel"><i class="fa fa-message"></i><br>Communication</div>
+                                    <div class="skillsPanel"><i class="fa fa-people-pulling"></i><br>Team work</div>
+                                    <div class="skillsPanel"><i class="fa fa-palette"></i><br>Creativity</div>
+                                    <div class="skillsPanel"><i class="fa fa-person-chalkboard"></i><br>Problem
+                                        solving
+                                    </div>
+                                    <div class="skillsPanel"><i class="fa fa-clock"></i><br>Time management</div>
+                                    <div class="skillsPanel"><i class="fa fa-brain"></i><br>Emotional intelligence
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="portfolio">
+                        <h1 class="title">Projects</h1>
+                        <div class="portfolioPanel-display">
+                            <div class="portfolioPanel">
+                                <!-- <a href="https://www.helgeoprintshop.co.za" target="_blank"><img
+                                src="images/helgeoprintshop.png" width="80%"></a> -->
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="contact">
+                        <h1 class="title">Get in touch</h1>
+                        <div class="contact-me">
+                            <form action="https://formsubmit.co/16e85c0a36231f26cd456fb5e3e24b00" method="POST">
+                                <div class="Personal-details">
+                                    <input type="text" id="name" placeholder="Name" name="Name" class="name" required>
+                                    <input type="text" placeholder="Email" name="Email" class="name" required>
+                                </div>
+                                <div class="mail">
+                                    <input type="text" placeholder="Subject" name="_subject" class="subject" required>
+                                    <textarea placeholder="type message here..." name="message" required></textarea>
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next"
+                                        value="https://josephmalete1997.github.io/Simple-website/thankyou.html">
+                                    <button class="send-button">Send</button>
+                                    <div class="invalid-email">
+                                        <p class="error-response"></p>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <style>
+                            /* Invalid email */
+
+                            .invalid-email {
+                                color: white;
+                                width: 100%;
+                                height: auto;
+                                margin-top: .5%;
+                                display: none;
+                                text-align: center;
+
+                                position: relative;
+                            }
+
+                            .error-response {
+                                background: rgb(255, 95, 95);
+                                position: absolute;
+                                width: 90%;
+                                top: -50px;
+                                padding: 0% 5%;
+                            }
+
+                            /*  */
+
+                            .Personal-details {
+                                width: 90%;
+                                display: flex;
+                                margin: auto;
+
+                            }
+
+                            .name {
+                                width: 95%;
+                                margin: auto;
+                                margin-bottom: 2%;
+                                border: 1px solid rgb(84, 104, 160);
+                                color: rgb(121, 136, 177);
+                                font-size: 24px;
+                                padding-left: 20px;
+                                border-radius: 5px;
+                            }
+
+                            .name:nth-child(2) {
+                                margin-left: 2%;
+                                border-radius: 5px;
+                            }
+
+                            .subject {
+                                margin-bottom: 2%;
+                                border: 1px solid rgb(84, 104, 160);
+                                font-size: 24px;
+                                padding-left: 20px;
+                                color: rgb(121, 136, 177);
+                                border-radius: 5px;
+                            }
+
+                            textarea {
+                                height: 100px;
+                                margin-bottom: 2%;
+                                border: 1px solid rgb(84, 104, 160);
+                                font-size: 24px;
+                                padding-left: 20px;
+                                color: rgb(121, 136, 177);
+                                border-radius: 5px;
+                            }
+
+                            form {
+                                width: 80%;
+                                margin: auto;
+                                background: white;
+                                padding: 5% 2%;
+                                border-radius: 5px;
+                                box-shadow: 4px 4px 2px rgb(0, 0, 0, 0.18);
+                            }
+
+                            .send-button {
+                                background: rgb(150, 178, 255);
+                                border: none;
+                                font-size: 24px;
+                                color: white;
+                                cursor: pointer;
+                                border-radius: 5px;
+                            }
+
+                            /* .send-button:hover {
                     background: white;
                     border: 1px solid rgb(84, 104, 160);
                     font-size: 24px;
                     color: rgb(84, 104, 160);
                     cursor: pointer;
                 } */
-                
-                .mail {
-                    width: 90%;
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto;
-                }
-                
-                @media screen and (max-width:600px) {
-                    .mail {
-                        width: 90%;
-                    }
-                }
-            </style>
-            <script>
-                //validate email
-                const emailAddress = document.querySelectorAll('.name');
-                const errorResponse = document.querySelector('.error-response');
-                const InvalidMail = document.querySelector('.invalid-email');
-                const sendButton = document.querySelector('.send-button');
-                const randomNumber = Math.floor(Math.random() * 100);
 
-                emailAddress[1].addEventListener('change', InvalidEmail);
-                const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                            .mail {
+                                width: 90%;
+                                display: flex;
+                                flex-direction: column;
+                                margin: auto;
+                            }
 
-                function InvalidEmail() {
+                            @media screen and (max-width:600px) {
+                                .mail {
+                                    width: 90%;
+                                }
+                            }
+                        </style>
+                        <script>
+                            //validate email
+                            const emailAddress = document.querySelectorAll('.name');
+                            const errorResponse = document.querySelector('.error-response');
+                            const InvalidMail = document.querySelector('.invalid-email');
+                            const sendButton = document.querySelector('.send-button');
+                            const randomNumber = Math.floor(Math.random() * 100);
 
-                    if (!emailAddress[1].value.match(email)) {
-                        InvalidMail.style.display = "block";
-                        errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid email address
-                            <br><br> E.g ${emailAddress[0].value}${randomNumber}@gmail.com`;
-                        sendButton.disabled = true;
-                    } else {
-                        InvalidMail.style.display = "none";
-                        sendButton.disabled = false;
-                    }
-                }
-            </script>
+                            emailAddress[1].addEventListener('change', InvalidEmail);
+                            const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-            <br><br>
-            <p>Follow me on</p>
-            <div class="socials">
-                <a href="https://www.instagram.com/joseph_jacob_malete/" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://web.facebook.com/josephjacobmalete.malete" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://wa.me/27818198122/" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/joseph-jacob-malete-886b40125/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/josephmalete1997" target="_blank"><i class="fa fa-github"></i></a>
+                            function InvalidEmail() {
+
+                                if (!emailAddress[1].value.match(email)) {
+                                    InvalidMail.style.display = "block";
+                                    errorResponse.innerHTML = `Hey ${emailAddress[0].value}, please enter a valid email address
+                            `;
+                                    sendButton.disabled = true;
+                                } else {
+                                    InvalidMail.style.display = "none";
+                                    sendButton.disabled = false;
+                                }
+                            }
+                        </script>
+
+                        <br><br>
+                        <p>Follow me on</p>
+                        <div class="socials">
+                            <a href="https://www.instagram.com/joseph_jacob_malete/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a href="https://web.facebook.com/josephjacobmalete.malete" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://wa.me/27818198122/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/joseph-jacob-malete-886b40125/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/josephmalete1997" target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <script src="js/main.js"></script>
+            <script src="js/panels.js"></script>
+    </body>
+    <footer>
+        <p>Developer: <br>Joseph Jacob Malete</p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/joseph_jacob_malete/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://web.facebook.com/josephjacobmalete.malete" target="_blank"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://wa.me/27818198122/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/joseph-jacob-malete-886b40125/" target="_blank"><i
+                    class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/josephmalete1997" target="_blank"><i class="fa fa-github"></i></a>
         </div>
-    </div>
-    <script src="main.js"></script>
-</body>
-<footer>
-    <p>Developer: <br>Joseph Jacob Malete</p>
-    <div class="footer-icons">
-        <a href="https://www.instagram.com/joseph_jacob_malete/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://web.facebook.com/josephjacobmalete.malete" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://wa.me/27818198122/" target="_blank"><i class="fa fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/joseph-jacob-malete-886b40125/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/josephmalete1997" target="_blank"><i class="fa fa-github"></i></a>
-    </div>
-    <p>&copy;2023</p>
-</footer>
+        <p>&copy;2023</p>
+    </footer>
 
 </html>
 

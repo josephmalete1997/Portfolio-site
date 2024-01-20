@@ -1,0 +1,327 @@
+/*Colors*/
+
+:root {
+    --orange: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0%;
+    background: rgb(33, 28, 83);
+    /* background: rgb(60, 61, 128); */
+    font-family: Arial, 'regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 1000px;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* background: red; */
+
+}
+
+
+.content p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-top: 50px;
+}
+
+.left-border {
+    border-left: 4px solid rgb(93, 196, 110);
+    border-radius: 4px;
+    background: rgb(244, 253, 255);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0, 0.13);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    color: rgb(238, 243, 255);
+    z-index: 10;
+    font-size: 60px;
+    right: 0px;
+    font-weight: 300;
+}
+
+.fa {
+    color: rgb(215, 241, 255);
+    font-size: 28px;
+}
+
+.dot {
+    display: flex;
+    float: right;
+}
+
+.dots {
+    background: rgb(255, 255, 255);
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+
+/*Other pages*/
+
+
+
+
+
+#about,
+#skills,
+#portfolio,
+#contact {
+    top: 200px;
+    display: block;
+    width: 100%;
+    position: relative;
+    color: var(--orange);
+
+}
+
+#portfolio {
+    display: grid;
+}
+
+
+/*Active status*/
+
+.active {
+    color: rgb(144, 208, 228);
+}
+
+
+/*description*/
+
+.description {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 24px;
+}
+
+
+/* skillsPanel */
+
+.skillsPanel-display {
+    display: flex;
+    width: 100%;
+}
+
+.skillsPanel {
+    color: rgb(171, 197, 228);
+    width: 100px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+}
+
+
+
+.skillsPanel .fa {
+    color: rgb(171, 197, 228);
+}
+
+
+
+
+.orange {
+    color: var(--orange);
+    font-size: 16px;
+}
+
+.orange .fa {
+    color: var(--orange);
+}
+
+
+/* portfolioPanel */
+
+.portfolioPanel-display {
+    width: 100%;
+    margin: auto;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+
+    padding: 50px 50px 200px 50px;
+
+}
+
+
+
+
+/* Colors */
+
+
+/* profile */
+
+.profile {
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 35%;
+    width: 30%;
+}
+
+.socials {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.socials a {
+    color: rgb(64, 83, 136);
+    font-size: 50px;
+    margin: auto;
+}
+
+
+
+.socials a .fa {
+    color: rgb(64, 83, 136);
+    font-size: 40px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial;
+    margin: auto;
+    width: 100%;
+}
+
+.contact-me .fa {
+    color: rgb(64, 83, 136);
+}
+
+.contactMe {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: right;
+    color: rgb(121, 146, 175);
+}
+
+hr {
+    color: rgb(255, 255, 255);
+}
+
+
+/* footer */
+
+footer {
+    margin-bottom: 0%;
+    height: 190px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: rgb(235, 248, 255);
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+    display: none;
+    /* border-radius: 0px 0px 200px 200px; */
+}
+
+/* Hobbies */
+.progress {
+    height: 0vh;
+    width: 5px;
+    right: 0px;
+    background: rgb(174, 174, 255);
+    z-index: 30;
+    position: absolute;
+    transition: .5s;
+}
+
+.content-inner {
+    width: 80%;
+    position: absolute;
+    top: -50px;
+    transition: 0.5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width:600px) {
+
+    /* Head and nav */
+    body {
+        overflow: auto;
+    }
+
+    .content-inner {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+        overflow: auto;
+    }
+
+    .header .nav {
+        position: absolute;
+        width: 96%;
+        margin-top: 120px;
+        margin-left: 2%;
+    }
+
+    .header .nav a {
+        font-size: 18px;
+    }
+
+    .header .nav a .fa {
+        font-size: 18px;
+    }
+
+    /* Content */
+    .content {
+        width: 90%;
+    }
+
+    .profile {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .contact-me {
+        flex-direction: column;
+    }
+
+    .contactMe {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .title {
+        margin-top: 20px;
+    }
+
+    .portfolioPanel-display {
+        flex-direction: column;
+    }
+
+    .skillsPanel-display {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding: 5rem;
+    }
+}
