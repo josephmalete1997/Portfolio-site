@@ -186,6 +186,7 @@
     border: 2px solid white;
 }
 
+
 .welcome:hover {
     /* transform: scale(0.9); */
     background-image: url(../images/img2x.png);
@@ -193,14 +194,13 @@
     background-size: 150%;
     background-position-y: -20px;
     border-radius: 30% 10px 10px 10px;
-    transform: scale(1.1);
+    filter: grayscale(60%);
 }
 
 .welcome:hover .over-layer {
     /* transform: scale(0.9); */
     opacity: .4;
-    bottom: 0%;
-    height: 100%;
+    bottom: -20%;
 }
 
 .welcome:hover .page-flip {
@@ -243,36 +243,15 @@
     background-image: url(../images/a2.jpg);
 }
 
-.hobbies:nth-child(1):hover {
-    background-image: url(../images/a2.jpg);
-    transform: scale(1.1);
-}
-
 .hobbies:nth-child(2) {
     background-image: url(../images/a4.webp);
-}
-
-.hobbies:nth-child(2):hover {
-    background-image: url(../images/a4.webp);
-    transform: scale(1.1);
 }
 
 .hobbies:nth-child(3) {
     background-image: url(../images/music.jpeg);
 }
 
-.hobbies:nth-child(3):hover {
-    background-image: url(../images/music.jpeg);
-
-    transform: scale(1.1);
-}
-
 .hobbies:nth-child(4) {
     background-image: url(../images/art.jpg);
     background-size: cover;
-}
-
-.hobbies:nth-child(4):hover {
-    background-image: url(../images/art.jpg);
-    transform: scale(1.1);
 }

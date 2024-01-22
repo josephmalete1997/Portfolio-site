@@ -315,6 +315,7 @@
     top: 20px;
     color: #7099e4;
     font-size: 24px;
+    font-weight: 100;
 }
 
 .status {
@@ -322,20 +323,25 @@
     right: 10px;
     top: 10px;
     font-weight: 600;
-    padding: 10px;
+    padding: 5px 10px;
     opacity: 0;
     transition: .5s;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .incomplete {
-    background: rgb(255, 213, 213);
-    color: rgb(255, 131, 131);
+    background: rgb(255, 165, 165);
+    color: rgb(255, 80, 80);
 }
 
 .complete {
     background: rgb(204, 255, 188);
     color: rgb(91, 209, 23);
+}
+
+.in-progress {
+    background: rgb(255, 205, 113);
+    color: rgb(221, 151, 0);
 }
 
 .download-cv {
@@ -374,7 +380,7 @@
 /* Education grid */
 .education-grid {
     display: grid;
-    grid-template-columns: 70% 40%;
+    grid-template-columns: 70% 45%;
     position: relative;
 }
 
@@ -383,7 +389,9 @@
     border-radius: 10px;
     height: auto;
     min-width: 100%;
-    top: -70px;
+    top: -20px;
     left: 100px;
     position: relative;
 }
+
+/* Projects */
