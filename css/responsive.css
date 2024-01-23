@@ -1,0 +1,153 @@
+/* Responsive */
+
+@media screen and (max-width:600px) {
+
+  /* Head and nav */
+  body {
+    overflow: auto;
+  }
+
+  .content-inner {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+
+  .header .nav {
+    position: absolute;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .header .nav a {
+    font-size: 18px;
+  }
+
+  .header .nav a .fa {
+    font-size: 18px;
+  }
+
+  /* Content */
+  .content {
+    width: 90%;
+  }
+
+  .profile {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+
+  .contactMe {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .title {
+    margin-top: 20px;
+  }
+
+  .portfolioPanel-display {
+    flex-direction: column;
+  }
+
+  .skillsPanel-display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+  }
+
+  /* Nav children */
+  .names {
+    transition: .3s;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 10;
+  }
+
+  .names h2 {
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 26px;
+
+  }
+
+  .names p {
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    margin-left: 0px;
+    font-size: 16px;
+    color: rgb(143, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+  }
+
+  .text-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .welcome {
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    background: rgb(137, 119, 241);
+    background-image: url(../images/img2x.png);
+    background-position-y: -10px;
+    background-position-x: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .v {
+    position: relative;
+  }
+
+  .d {
+    position: relative;
+  }
+
+  .panel-one {
+    position: relative;
+    margin-top: 1000px;
+  }
+
+  .sub-title {
+    margin-top: 0px;
+    position: relative;
+  }
+
+  /* panels */
+  .panel-skills {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .panel-one {
+    height: 200px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+}

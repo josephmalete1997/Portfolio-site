@@ -8,10 +8,9 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/responsive.css">
         <link rel="shortcut icon" href="images/profile.gif">
-        <!-- <script src="https://kit.fontawesome.com/062d0051ac.js" crossorigin="anonymous"></script> -->
-
-
+        <script src="https://kit.fontawesome.com/062d0051ac.js" crossorigin="anonymous"></script>
 
         <title>Joseph Malete</title>
     </head>
@@ -32,6 +31,13 @@
                 <div class="names">
                     <h2>Joseph Malete</h2>
                     <p>full stack Web developer</p>
+                    <div class="menu open">
+                        <div class="menu-one">
+                            <div class="menu-inside mi"></div>
+                            <div class="menu-inside mi"></div>
+                            <div class="menu-inside mi"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="socials-icons">
@@ -51,23 +57,17 @@
         </div>
 
         <div class="side-nav">
-            <div class="menu">
-                <div class="menu-one">
-                    <div class="menu-inside mi"></div>
-                    <div class="menu-inside mi"></div>
-                    <div class="menu-inside mi"></div>
-                </div>
+            <div class="menu close">
                 <div class="menu-one">
                     <div class="menu-inside mi"></div>
                     <div class="menu-inside mi"></div>
                     <div class="menu-inside mi"></div>
                 </div>
             </div>
-
-            <a href="#about"> About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio"> Portfolio</a>
-            <a href="#contact"> Contact</a>
+            <a href="#about"><i class="fa-regular fa-user"></i> About <i class="fa-solid fa-sort-down"></i></a>
+            <a href="#skills"><i class="fa-regular fa-lightbulb"></i> Skills</a>
+            <a href="#portfolio"><i class="fa-regular fa-folder"></i> Portfolio</a>
+            <a href="#contact"><i class="fa-regular fa-address-book"></i> Contact</a>
         </div>
 
         <div class="content">
@@ -75,8 +75,6 @@
             <div class="content-inner">
                 <div id="about">
                     <h1 class="title">About me</h1>
-
-
                     <div class="text-image">
                         <div class="welcome">
                             <div class="over-layer">Hi, welcome <br>to my digital profile</div>
@@ -94,13 +92,13 @@
                             a good work ethic. I also enjoy working with a team of like-minded individuals. I am
                             currently
                             open to learning opportunities to advance my skills.
-                        <div class="download-cv d">Download CV</div>
-                        <div class="download-cv v">View CV</div>
+                        <div class="download-cv d"><i class="fa-solid fa-download"></i> Download CV</div>
+                        <div class="download-cv v"><i class="fa-solid fa-eye"></i> View CV</div>
                         </p>
 
 
                     </div>
-                    <h2 class="hobbies-and-interests">Hobbies and interest</h2>
+                    <div class="sub-title">Hobbies and interest</div>
                     <div class="panel-one">
                         <div class="welcome hobbies">
                             <div class="over-layer">
@@ -133,70 +131,153 @@
                         </div>
                     </div>
 
-                    <h2 class="education">Education</h2>
+                    <div class="sub-title">Education</div>
                     <div class="education-grid">
                         <div class="schools-items">
                             <div class="schools">
-                                <p>2017</p>
-                                <h2>Grade 12 <em>(Matric)</em></h2>
-                                <p>Raeleng secondary school</p>
-                                <span class="status complete">Complete</span>
+                                <img src="images/uj.jpg">
+                                <div class="schools-details">
+                                    <p>2017</p>
+                                    <h2>Grade 12 <em>(Matric)</em></h2>
+                                    <p>Raeleng secondary school</p>
+                                    <span class="status complete">Complete</span>
+                                </div>
                             </div>
                             <div class="schools">
-                                <p>2018 - 2018</p>
-                                <h2>Bachelor Of Accounting <em>(CA stream)</em></h2>
-                                <p>University Of Johannesburg</p>
-                                <span class="status incomplete">Incomplete</span>
+                                <img src="images/uj.jpg">
+                                <div class="schools-details">
+                                    <p>2018 - 2018</p>
+                                    <h2>Bachelor Of Accounting <em>(CA stream)</em></h2>
+                                    <p>University Of Johannesburg</p>
+                                    <span class="status incomplete">Incomplete</span>
+                                </div>
                             </div>
                             <div class="schools">
-                                <p>2020 - 2022</p>
-                                <h2>Bcom Chartered Accountancy</h2>
-                                <p>North West University</p>
-                                <span class="status incomplete">Incomplete</span>
+                                <img src="images/nwu.png">
+                                <div class="schools-details">
+                                    <p>2020 - 2022</p>
+                                    <h2>Bcom Chartered Accountancy</h2>
+                                    <p>North West University</p>
+                                    <span class="status incomplete">Incomplete</span>
+                                </div>
                             </div>
                             <div class="schools">
-                                <p>2023 - Present</p>
-                                <h2>National Certificate in IT(NCIT)</h2>
-                                <p>Umuzi Academy</p>
-                                <span class="status in-progress">In-progress</span>
+                                <img src="images/umuzi.png">
+                                <div class="schools-details">
+                                    <p>2023 - Present</p>
+                                    <h2>National Certificate in IT(NCIT)</h2>
+                                    <p>Umuzi Academy</p>
+                                    <span class="status in-progress">In-progress</span>
+                                </div>
                             </div>
                         </div>
 
-                        <img src="images/edu.png" class="edu" width="100%">
                     </div>
 
                     <div id="skills">
                         <h1 class="title">Skills</h1>
 
                         <div class="align-panel">
-                            <div class="panel-one">
-                                <p>Technical</p>
-                                <div class="skillsPanel-display">
-                                    <div class="skillsPanel"><img src="css/icons/code.svg"><br>Html</div>
-                                    <div class="skillsPanel"><i class="fa fa-laptop-code"></i><br>Css</div>
-                                    <div class="skillsPanel"><i class="fa fa-file-code"></i><br>Javascript</div>
-                                    <div class="skillsPanel"><i class="fa fa-github"></i><br>Github</div>
-                                    <div class="skillsPanel"><i class="fa fa-solid fa-code-merge"></i><br>Git</div>
-                                    <div class="skillsPanel"><i class="fa fa-terminal"></i><br>Bash</div>
-                                    <div class="skillsPanel"><i class="fa fa-drafting-compass"></i><br>Photoshop
-                                    </div>
+                            <div class="sub-title">UI / UX Design</div>
+                            <div class="panel-skills">
+                                <div class="skillsPanel"><i class="fa-brands fa-figma"></i>
+                                    <p>Figma</p>
+                                    <div class="page-flip-brands"></div>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-drafting-compass"></i>
+                                    <p>Adobe Photoshop</p>
                                 </div>
                             </div>
-                            <div class="panel-one">
-                                <p>Soft</p>
-                                <div class="skillsPanel-display ">
-                                    <div class="skillsPanel"><i class="fa fa-message"></i><br>Communication</div>
-                                    <div class="skillsPanel"><i class="fa fa-people-pulling"></i><br>Team work</div>
-                                    <div class="skillsPanel"><i class="fa fa-palette"></i><br>Creativity</div>
-                                    <div class="skillsPanel"><i class="fa fa-person-chalkboard"></i><br>Problem
-                                        solving
-                                    </div>
-                                    <div class="skillsPanel"><i class="fa fa-clock"></i><br>Time management</div>
-                                    <div class="skillsPanel"><i class="fa fa-brain"></i><br>Emotional intelligence
-                                    </div>
+                            <div class="sub-title">Front-end </div>
+                            <div class="panel-skills">
+                                <div class="skillsPanel"><i class="fa-brands fa-html5"></i>
+                                    <p>Html</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-figma"></i>
+                                    <p>Figma</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-css3-alt"></i>
+                                    <p>Css</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-js"></i>
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-node-js"></i>
+                                    <p>Node js</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-github"></i>
+                                    <p>Github</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-solid fa-code-merge"></i>
+                                    <p>Git</p>
+                                </div>
+                                <div class="skillsPanel">
+                                    <i class="fa-brands fa-docker"></i>
+                                    <p>Docker</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-terminal"></i>
+                                    <p>Bash</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-drafting-compass"></i>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                            <div class="panel-skills">
+                                <div class="skillsPanel"><i class="fa-brands fa-html5"></i>
+                                    <p>Html</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-figma"></i>
+                                    <p>Figma</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-css3-alt"></i>
+                                    <p>Css</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-js"></i>
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa-brands fa-node-js"></i>
+                                    <p>Node js</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-github"></i>
+                                    <p>Github</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-solid fa-code-merge"></i>
+                                    <p>Git</p>
+                                </div>
+                                <div class="skillsPanel">
+                                    <i class="fa-brands fa-docker"></i>
+                                    <p>Docker</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-terminal"></i>
+                                    <p>Bash</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-drafting-compass"></i>
+                                    <p>Photoshop</p>
                                 </div>
                             </div>
 
+                            <div class="sub-title">Soft skills</div>
+                            <div class="panel-skills">
+                                <div class="skillsPanel"><i class="fa fa-message"></i>
+                                    <p>Communication</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-people-pulling"></i>
+                                    <p>Team work</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-palette"></i>
+                                    <p>Creativity</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-person-chalkboard"></i>
+                                    <p>Problem
+                                        solving</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-clock"></i>
+                                    <p>Time management</p>
+                                </div>
+                                <div class="skillsPanel"><i class="fa fa-brain"></i>
+                                    <p>Emotional intelligence</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="portfolio">

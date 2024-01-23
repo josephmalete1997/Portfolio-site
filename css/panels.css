@@ -160,6 +160,53 @@
     grid-template-columns: 33% 33% 33% 33%;
 }
 
+.panel-skills {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33% 33%;
+}
+
+/* skillsPanel */
+.sub-title {
+    font-size: 36px;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.skillsPanel {
+    color: rgb(171, 197, 228);
+    background: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.skillsPanel:hover {
+    filter: saturate(20%);
+}
+
+.skillsPanel p {
+    color: rgb(71, 154, 255);
+    font-size: 22px;
+}
+
+.skillsPanel .fa,
+.skillsPanel .fa-regular,
+.skillsPanel .fa-brands {
+    color: rgb(71, 154, 255);
+    font-size: 66px;
+    padding-top: 50px;
+}
+
 
 /* blink */
 
@@ -217,29 +264,6 @@
     padding-left: 100px;
 }
 
-#about .hobbies-and-interests::before {
-    content: "";
-    width: 900px;
-    height: 5px;
-    top: 250px;
-    background-color: white;
-    position: absolute;
-    left: 10%;
-    padding: 0px;
-}
-
-#about .hobbies-and-interests:after {
-    content: "";
-    width: 5px;
-    height: 250px;
-    top: -90px;
-    background-color: white;
-    position: absolute;
-    left: 20%;
-    padding: 0px;
-}
-
-
 #about .education {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -250,47 +274,36 @@
     width: 25%;
     font-weight: 300;
     position: relative;
-    margin-bottom: 100px;
     padding-left: 100px;
-}
-
-#about .education::before {
-    content: "";
-    width: 900px;
-    height: 5px;
-    top: 250px;
-    background-color: white;
-    position: absolute;
-    left: 10%;
-    padding: 0px;
-    display: none;
-}
-
-#about .education:after {
-    content: "";
-    width: 5px;
-    height: 250px;
-    top: -90px;
-    background-color: white;
-    position: absolute;
-    left: 20%;
-    padding: 0px;
 }
 
 .schools {
     background: rgb(255, 255, 255);
     color: #000000;
     text-align: left;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 40% 50%;
     position: relative;
-    border-radius: 5px;
-    left: 30px;
-    top: -50px;
-    height: 100px;
-    padding-left: 30px;
+    border-radius: 10px;
+    height: auto;
+    padding-left: 5px;
     margin: 10px;
-    border-left: 5px solid rgb(147, 194, 255);
+}
+
+.schools-details {
+    margin-left: -100px;
+}
+
+.schools img {
+    height: auto;
+    max-width: 50%;
+    padding: 15px;
+    border-radius: 18px;
+    filter: saturate(110%);
+}
+
+.schools img:hover {
+    filter: saturate(10%);
 }
 
 .schools:hover .status {
@@ -306,8 +319,8 @@
 
 .schools p:nth-child(3) {
     position: absolute;
-    bottom: -15px;
-
+    bottom: 5px;
+    color: #06060a;
 }
 
 .schools h2 {
@@ -358,7 +371,7 @@
 }
 
 .d {
-    right: 100px;
+    right: 120px;
 }
 
 .v {
@@ -380,7 +393,7 @@
 /* Education grid */
 .education-grid {
     display: grid;
-    grid-template-columns: 70% 45%;
+    grid-template-columns: 90%;
     position: relative;
 }
 
@@ -389,9 +402,10 @@
     border-radius: 10px;
     height: auto;
     min-width: 100%;
-    top: -20px;
-    left: 100px;
+    left: -30%;
+    top: 30%;
     position: relative;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1)) saturate(70%) brightness(80%);
 }
 
 /* Projects */

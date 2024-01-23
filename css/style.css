@@ -109,26 +109,6 @@ body {
 }
 
 
-/* skillsPanel */
-
-.skillsPanel-display {
-    display: flex;
-    width: 100%;
-}
-
-.skillsPanel {
-    color: rgb(171, 197, 228);
-    width: 100px;
-    border-radius: 10px;
-    font-size: 16px;
-    padding: 5px 15px 5px 15px;
-}
-
-
-
-.skillsPanel .fa {
-    color: rgb(171, 197, 228);
-}
 
 
 
@@ -253,76 +233,4 @@ footer {
 html {
     scroll-behavior: smooth;
     scroll-padding: 5rem;
-}
-
-/* Responsive */
-
-@media screen and (max-width:600px) {
-
-    /* Head and nav */
-    body {
-        overflow: auto;
-    }
-
-    .content-inner {
-        width: 100%;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        overflow: auto;
-    }
-
-    .header .nav {
-        position: absolute;
-        width: 96%;
-        margin-top: 120px;
-        margin-left: 2%;
-    }
-
-    .header .nav a {
-        font-size: 18px;
-    }
-
-    .header .nav a .fa {
-        font-size: 18px;
-    }
-
-    /* Content */
-    .content {
-        width: 90%;
-    }
-
-    .profile {
-        width: 50%;
-        margin-left: 25%;
-    }
-
-    .contact-me {
-        flex-direction: column;
-    }
-
-    .contactMe {
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    .title {
-        margin-top: 20px;
-    }
-
-    .portfolioPanel-display {
-        flex-direction: column;
-    }
-
-    .skillsPanel-display {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    html {
-        scroll-behavior: smooth;
-        scroll-padding: 5rem;
-    }
 }
