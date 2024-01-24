@@ -276,10 +276,66 @@
                     </div>
                     <div id="portfolio">
                         <h1 class="title">Projects</h1>
-                        <iframe width="1000px" height="500px" src="portfolio/Calculator/index.html"
-                            frameborder="0"></iframe>
+                        <!-- <iframe width="1000px" height="500px" src="portfolio/Calculator/index.html"
+                            frameborder="0"></iframe> -->
+
+
+                        <style>
+                            #fullscreen-btn {
+                                top: 200px;
+                                right: -200px;
+                                padding: 10px;
+                                background-color: #3498db;
+                                color: #fff;
+                                border: none;
+                                cursor: pointer;
+                                width: 200px;
+                                height: 50px;
+                                position: absolute;
+                            }
+
+                            #iframe-container {
+                                width: 80vw;
+                                height: 100vh;
+                            }
+
+                            #fullscreen-iframe {
+                                width: 90%;
+                                height: 70%;
+                                border: 2px solid white;
+                            }
+                        </style>
+
+                        <button id="fullscreen-btn">Fullscreen</button>
+
+                        <div id="iframe-container">
+                            <iframe id="fullscreen-iframe" src="portfolio/Calculator/index.html"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <script>
+                            const fullscreenBtn = document.getElementById('fullscreen-btn');
+                            const iframeContainer = document.getElementById('iframe-container');
+                            const fullscreenIframe = document.getElementById('fullscreen-iframe');
+
+                            fullscreenBtn.addEventListener('click', () => {
+                                iframeContainer.style.width = "100vh"
+                                fullscreenIframe.style.width = "100%"
+                                fullscreenIframe.style.height = "100%"
+                                if (document.fullscreenElement) {
+                                    document.exitFullscreen();
+                                } else {
+                                    iframeContainer.requestFullscreen().catch(err => {
+                                        console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                                    });
+                                }
+                            });
+                        </script>
+
+
+
                     </div>
-                    <div id="contact">
+                    <div id=" contact">
                         <h1 class="title">Get in touch</h1>
                         <div class="contact-me">
                             <form action="https://formsubmit.co/16e85c0a36231f26cd456fb5e3e24b00" method="POST">

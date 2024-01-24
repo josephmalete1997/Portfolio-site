@@ -65,7 +65,7 @@ function addGraph(m, ty) {
   setTimeout(transform, 1000);
 }
 
-addGraph(9, 5);
+addGraph(-2, -1);
 // const y = m * xInt + c;
 function transform() {
   const graph = document.querySelector(".str-line");
