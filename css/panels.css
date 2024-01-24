@@ -201,6 +201,7 @@
 
 .skillsPanel .fa,
 .skillsPanel .fa-regular,
+.skillsPanel .fa-solid,
 .skillsPanel .fa-brands {
     color: rgb(71, 154, 255);
     font-size: 66px;
@@ -244,6 +245,8 @@
     height: 10px;
     cursor: all-scroll;
 }
+
+/*  */
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -357,27 +360,39 @@
     color: rgb(221, 151, 0);
 }
 
+.download-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -8%;
+}
+
 .download-cv {
     color: rgb(0, 0, 0);
-    right: -00px;
     bottom: 40px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     border: 4px solid white;
     transition: .1s;
     background: white;
-    position: absolute;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 
 .d {
-    right: 120px;
+    /* right: 120px; */
 }
 
 .v {
     background: transparent;
-    right: 0px;
     color: white;
+    left: 10px;
 }
 
 .d:hover {
@@ -385,10 +400,47 @@
     background: transparent;
 }
 
+.d:hover .btn-load {}
+
+.v:hover .btn-load {}
+
 .v:hover {
     color: rgb(0, 0, 0);
     background: white;
 }
+
+/* Load bars */
+
+.btn-load {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    border: 3px solid transparent;
+    border-top: 3px solid;
+    /* Adjust color as needed */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    /* Add rotation animation */
+    visibility: hidden;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
 
 /* Education grid */
 .education-grid {
@@ -409,3 +461,66 @@
 }
 
 /* Projects */
+
+
+.bar-1 {
+    animation: bar1 .2s linear infinite;
+}
+
+.bar-2 {
+    animation: bar2 .3s linear infinite;
+    left: 15px;
+}
+
+.bar-3 {
+    animation: bar3 .4s linear infinite;
+    left: 30px;
+}
+
+@keyframes bar1 {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes bar2 {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes bar3 {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+
+iframe {
+    border-radius: 20px;
+    border: 2px solid white;
+}
