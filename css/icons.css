@@ -1,0 +1,13 @@
+.fa-js {
+  /* color: rgb(255, 217, 0); */
+}
+
+
+.skillsPanel .fa,
+.skillsPanel .fa-regular,
+.skillsPanel .fa-solid,
+.skillsPanel .fa-brands {
+  color: rgb(71, 154, 255);
+  font-size: 66px;
+  padding-top: 50px;
+}

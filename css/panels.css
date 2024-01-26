@@ -174,11 +174,10 @@
 }
 
 .skillsPanel {
-    color: rgb(171, 197, 228);
-    background: white;
+    color: rgb(232, 242, 255);
+    background: rgb(255, 255, 255, 1);
     width: 80%;
     height: 80%;
-    border-radius: 10px;
     font-size: 16px;
     padding: 5px;
     margin: 10px;
@@ -199,14 +198,6 @@
     font-size: 22px;
 }
 
-.skillsPanel .fa,
-.skillsPanel .fa-regular,
-.skillsPanel .fa-solid,
-.skillsPanel .fa-brands {
-    color: rgb(71, 154, 255);
-    font-size: 66px;
-    padding-top: 50px;
-}
 
 
 /* blink */
@@ -230,13 +221,13 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 5px;
 }
 
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: rgb(33, 28, 83);
 }
 
 /* Handle */
