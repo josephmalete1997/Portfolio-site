@@ -222,6 +222,7 @@
     border-radius: 10px;
     overflow: hidden;
     /* border: 2px solid white; */
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.18);
 }
 
 
