@@ -1,5 +1,3 @@
-/* Responsive */
-
 .mobile-about {
   width: 100%;
   display: none;
@@ -7,13 +5,24 @@
   grid-column-gap: 5%;
 }
 
+.photo {
+  display: block;
+}
 
-
-@media screen and (max-width:600px) {
+@media screen and (min-width: 300px) and (max-width: 600px),
+(max-width: 98%) {
 
   /* Head and nav */
   body {
     overflow: auto;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: none;
   }
 
   .mobile-about {
@@ -22,6 +31,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* Social icons */
+  .socials-icons {
+    position: absolute;
+    z-index: 200;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
   .mobile-about-text {
@@ -150,12 +169,13 @@
   }
 
   .download-section {
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0%;
-    margin-top: 20%;
+    margin-left: 2.5%;
+    margin-top: 0%;
+    position: relative;
   }
 
   .download-cv {
@@ -249,4 +269,23 @@
     color: rgb(221, 151, 0);
   }
 
+  #skills,
+  #portfolio,
+  #contact {
+    display: block;
+    width: 95%;
+    color: var(--orange);
+
+  }
+
+  #about,
+  #skills {
+    display: block;
+    width: 95%;
+    position: relative;
+  }
+
+  #portfolio {
+    display: grid;
+  }
 }

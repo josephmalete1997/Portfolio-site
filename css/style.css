@@ -77,7 +77,6 @@ body {
 
 
 
-#about,
 #skills,
 #portfolio,
 #contact {
@@ -220,17 +219,6 @@ footer {
 }
 
 
-
-/* Hobbies */
-.progress {
-    height: 0vh;
-    width: 5px;
-    right: 0px;
-    background: rgb(174, 174, 255);
-    z-index: 30;
-    position: absolute;
-    transition: .5s;
-}
 
 html {
     scroll-behavior: smooth;
