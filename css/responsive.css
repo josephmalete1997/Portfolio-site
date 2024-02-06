@@ -1,7 +1,7 @@
 .mobile-about {
-  width: 100%;
+  width: 95%;
   display: none;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 55%;
   grid-column-gap: 5%;
 }
 
@@ -174,8 +174,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
-    margin-top: 2%;
+    margin-top: 10%;
     position: relative;
   }
 
@@ -189,15 +188,15 @@
   }
 
   .schools {
-    width: 100%;
+    width: 90%;
     background: rgb(255, 255, 255);
     color: #000000;
     display: grid;
-    grid-template-columns: 60% 60%;
+    grid-template-columns: 40% 60%;
     position: relative;
     border-radius: 10px;
     height: auto;
-    padding-left: 5px;
+    padding-left: 1%;
     margin: 10px 0px;
   }
 
@@ -348,7 +347,6 @@
 
   .content {
     width: 100%;
-    padding: 0px;
     margin-top: 0px;
     display: flex;
     position: relative;
@@ -471,25 +469,25 @@
   }
 
   .schools {
-    width: 100%;
+    width: 99%;
     background: rgb(255, 255, 255);
     color: #000000;
     display: grid;
-    grid-template-columns: 60% 60%;
+    grid-template-columns: 40% 60%;
     position: relative;
     border-radius: 10px;
     height: auto;
-    padding-left: 5px;
+    padding-left: 1%;
     margin: 10px 0px;
   }
 
   .schools-details {
-    margin-left: -70px;
+    margin-left: -30px;
   }
 
   .schools img {
     height: auto;
-    max-width: 55%;
+    max-width: 60%;
     padding: 15px;
     border-radius: 18px;
     filter: saturate(110%);
@@ -513,9 +511,13 @@
 
   .schools p:nth-child(3) {
     position: absolute;
-    bottom: 0px;
+    bottom: -15px;
     color: #06060a;
     font-size: 16px;
+  }
+
+  footer {
+    font-size: 18px;
   }
 
   .schools h2 {
