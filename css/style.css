@@ -23,6 +23,7 @@ body {
     transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     /* background-color: black; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -79,7 +80,8 @@ body {
 
 #skills,
 #portfolio,
-#contact {
+#contact,
+#about {
     top: 150px;
     display: block;
     width: 100%;
@@ -88,14 +90,10 @@ body {
 
 }
 
-#about {
-    top: 150px;
-    display: block;
-    width: 80%;
-    position: relative;
-    color: var(--orange);
-
+#contact {
+    margin-bottom: 250px;
 }
+
 
 #portfolio {
     display: grid;
@@ -209,13 +207,16 @@ hr {
 
 footer {
     width: 100%;
+    height: 100px;
     color: rgb(235, 248, 255);
     text-align: center;
     font-family: monospace;
     font-size: 24px;
-    padding-bottom: 100px;
-    position: absolute;
-    bottom: -400px;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
