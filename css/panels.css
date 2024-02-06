@@ -275,6 +275,9 @@
     background: #4570ff;
 }
 
+.schools-items {
+    width: 100%;
+}
 
 .schools {
     background: rgb(255, 255, 255);

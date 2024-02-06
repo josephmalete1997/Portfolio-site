@@ -1,5 +1,14 @@
 /* Responsive */
 
+.mobile-about {
+  width: 100%;
+  display: none;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 5%;
+}
+
+
+
 @media screen and (max-width:600px) {
 
   /* Head and nav */
@@ -7,12 +16,41 @@
     overflow: auto;
   }
 
-  .content-inner {
+  .mobile-about {
     width: 100%;
-    margin-top: 100px;
+    grid-column-gap: 5%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-about-text {
+    text-align: center;
+  }
+
+
+  .mobile-about-text h1 {
+    font-family: cursive;
+    color: #0ca8f0;
+  }
+
+  .mobile-about-text p {}
+
+  .mobile-about img {
+    max-width: 60%;
+    height: auto;
+    background: rgb(145, 145, 255);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    display: flex;
+    position: relative;
     flex-direction: column;
-    position: absolute;
     transition: 0.5s ease-in-out;
   }
 
@@ -30,10 +68,6 @@
     font-size: 18px;
   }
 
-  /* Content */
-  .content {
-    width: 100%;
-  }
 
   .contact-me {
     flex-direction: column;
@@ -46,6 +80,7 @@
 
   .title {
     margin-top: 20px;
+    text-align: center;
   }
 
   .portfolioPanel-display {
@@ -64,37 +99,12 @@
 
   /* Nav children */
   .names {
-    transition: .3s;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    font-weight: 10;
-  }
-
-  .names h2 {
-    transition: .3s;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    font-size: 26px;
-
-  }
-
-  .names p {
-    transition: .3s;
-    display: flex;
-    flex-direction: column;
-    margin-top: -15px;
-    margin-left: 0px;
-    font-size: 16px;
-    color: rgb(143, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
+    display: none;
   }
 
   .text-image {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     position: relative;
@@ -111,7 +121,7 @@
 
   .hobbies {
     width: 100%;
-    height: 100%;
+    height: 200px;
   }
 
   .sub-title {
@@ -125,17 +135,18 @@
     position: relative;
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-column-gap: 2%;
-    grid-row-gap: 2%;
+    grid-column-gap: 4%;
+    grid-row-gap: 0%;
   }
 
   .panel-one {
     height: 200px;
     position: relative;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
     grid-column-gap: 2%;
-    grid-row-gap: 2%;
+    grid-row-gap: 10%;
+    margin-bottom: 250px;
   }
 
   .download-section {
@@ -150,4 +161,92 @@
   .download-cv {
     width: 50%;
   }
+
+  /* School panels */
+  .schools-items {
+    width: 100%;
+  }
+
+  .schools {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    display: grid;
+    grid-template-columns: 60% 60%;
+    position: relative;
+    border-radius: 10px;
+    height: auto;
+    padding-left: 5px;
+    margin: 10px 0px;
+  }
+
+  .schools-details {
+    margin-left: -70px;
+  }
+
+  .schools img {
+    height: auto;
+    max-width: 55%;
+    padding: 15px;
+    border-radius: 18px;
+    filter: saturate(110%);
+  }
+
+  .schools img:hover {
+    filter: saturate(10%);
+  }
+
+  .schools:hover .status {
+    opacity: 1;
+  }
+
+  .schools p:nth-child(1) {
+    position: absolute;
+    top: -40px;
+    color: #0ca8f0;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .schools p:nth-child(3) {
+    position: absolute;
+    bottom: 0px;
+    color: #06060a;
+    font-size: 16px;
+  }
+
+  .schools h2 {
+    position: absolute;
+    top: 20px;
+    color: #7099e4;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .status {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 20px;
+  }
+
+  .incomplete {
+    background: rgb(255, 165, 165);
+    color: rgb(255, 80, 80);
+  }
+
+  .complete {
+    background: rgb(204, 255, 188);
+    color: rgb(91, 209, 23);
+  }
+
+  .in-progress {
+    background: rgb(255, 205, 113);
+    color: rgb(221, 151, 0);
+  }
+
 }
