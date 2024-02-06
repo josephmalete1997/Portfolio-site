@@ -443,10 +443,11 @@
 /* Projects */
 .project-section {
     width: 100%;
-    height: 200px;
+    height: auto;
     background: white;
     border-radius: 10px;
     color: rgb(71, 154, 255);
+    padding-bottom: 100px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
