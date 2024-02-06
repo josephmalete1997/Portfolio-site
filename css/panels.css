@@ -292,12 +292,12 @@
 }
 
 .schools-details {
-    margin-left: -50px;
+    margin-left: -90px;
 }
 
 .schools img {
     height: auto;
-    max-width: 60%;
+    max-width: 55%;
     padding: 15px;
     border-radius: 18px;
     filter: saturate(110%);
@@ -313,7 +313,7 @@
 
 .schools p:nth-child(1) {
     position: absolute;
-    top: -40px;
+    top: -20px;
     color: #0ca8f0;
     font-weight: 100;
 }
@@ -326,9 +326,9 @@
 
 .schools h2 {
     position: absolute;
-    top: 20px;
+    top: 50px;
     color: #7099e4;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 100;
 }
 
@@ -363,7 +363,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 50%;
-    margin-top: 5%;
+    margin-top: -2%;
 }
 
 .download-section .fa-solid {
