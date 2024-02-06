@@ -574,3 +574,137 @@
     display: grid;
   }
 }
+
+@media screen and (min-width:450px) and (max-width:700px) {
+  .download-section {
+    width: 80%;
+    margin-top: 0%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width:450px) and (max-width:700px) {
+  .download-section {
+    width: 80%;
+    margin-top: 0%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width:850px) and (max-width:890px) {
+  .download-section {
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 45%;
+  }
+}
+
+@media screen and (min-width:891px) and (max-width:990px) {
+  .download-section {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 45%;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width:1024px) {
+  .download-section {
+    width: 50%;
+    margin-top: -2%;
+    margin-left: 45%;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1080px) {
+  .download-section {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 55%;
+  }
+
+  .schools img {
+    height: auto;
+    max-width: 55%;
+    padding: 15px;
+    border-radius: 18px;
+    filter: saturate(110%);
+  }
+
+  .schools img:hover {
+    filter: saturate(10%);
+  }
+
+  .schools:hover .status {
+    opacity: 1;
+  }
+
+  .schools p:nth-child(1) {
+    position: absolute;
+    top: -40px;
+    color: #0ca8f0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .schools p:nth-child(3) {
+    position: absolute;
+    bottom: 0px;
+    color: #06060a;
+    font-size: 20px;
+  }
+
+  .schools h2 {
+    position: absolute;
+    top: 20px;
+    color: #7099e4;
+    font-size: 26px;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width:1081px) and (max-width:1250px) {
+  .download-section {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 55%;
+  }
+
+  .schools img {
+    height: auto;
+    max-width: 55%;
+    padding: 15px;
+    border-radius: 18px;
+    filter: saturate(110%);
+  }
+
+  .schools img:hover {
+    filter: saturate(10%);
+  }
+
+  .schools:hover .status {
+    opacity: 1;
+  }
+
+  .schools p:nth-child(1) {
+    position: absolute;
+    top: -40px;
+    color: #0ca8f0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .schools p:nth-child(3) {
+    position: absolute;
+    bottom: 0px;
+    color: #06060a;
+    font-size: 20px;
+  }
+
+  .schools h2 {
+    position: absolute;
+    top: 20px;
+    color: #7099e4;
+    font-size: 26px;
+    font-weight: 100;
+  }
+}
