@@ -9,6 +9,13 @@
   display: block;
 }
 
+
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+  body {
+    background-color: #000000;
+  }
+}
+
 @media screen and (min-width: 300px) and (max-width: 600px),
 (max-width: 98%) {
 
