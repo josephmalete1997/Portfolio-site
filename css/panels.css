@@ -422,11 +422,15 @@
     left: 5px;
     border: 3px solid transparent;
     border-top: 3px solid;
-    /* Adjust color as needed */
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    /* Add rotation animation */
     visibility: hidden;
+}
+
+#send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes spin {

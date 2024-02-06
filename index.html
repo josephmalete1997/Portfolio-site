@@ -304,12 +304,13 @@
                             <input type="text" id="subject" placeholder="Enter subject..." name="_subject"
                                 class="subject" required>
                             <label for="message">Message</label>
-                            <textarea placeholder="type message here..." id="message" name="message"
+                            <textarea placeholder="type message here..." id="message" class="message" name="message"
                                 required></textarea>
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next"
                                 value="https://josephmalete1997.github.io/Portfolio-site/thankyou.html">
-                            <button class="send-button">Send</button>
+                            <button class="send-button" id="send">Send<div class="btn-load loader-3">
+                                </div></button>
                             <div class="invalid-email">
                                 <p class="error-response"></p>
                             </div>
