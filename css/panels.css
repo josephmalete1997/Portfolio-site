@@ -157,26 +157,57 @@
     height: 200px;
     position: relative;
     display: grid;
-    grid-template-columns: 33% 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1%;
 }
 
 .panel-skills {
+    width: 100%;
     position: relative;
     display: grid;
-    grid-template-columns: 33% 33% 33% 33%;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 2%;
 }
 
 /* skillsPanel */
 .sub-title {
     font-size: 36px;
     text-align: left;
-    padding: 10px 0px;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.sub-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-left: 50px solid rgb(104, 164, 255);
+    transition: 1.5s;
+}
+
+.sub-title:hover::before {
+    border-left: 70px solid rgb(104, 164, 255);
+    width: 20px;
+}
+
+.sub-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 50px);
+    height: 1px;
+    background-color: transparent;
 }
 
 .skillsPanel {
     color: rgb(232, 242, 255);
     background: rgb(255, 255, 255, 1);
-    width: 80%;
+    width: 98%;
     height: 80%;
     font-size: 16px;
     padding: 5px;
@@ -186,7 +217,7 @@
     align-items: center;
     justify-content: center;
     transition: .5s;
-    overflow: hidden;
+    border-radius: 10px;
 }
 
 .skillsPanel:hover {
@@ -244,39 +275,12 @@
     background: #4570ff;
 }
 
-#about .hobbies-and-interests {
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    font: 46px;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10px;
-    width: 40%;
-    font-weight: 300;
-    position: relative;
-    margin-bottom: 100px;
-    padding-left: 100px;
-}
-
-#about .education {
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    font: 46px;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10px;
-    width: 25%;
-    font-weight: 300;
-    position: relative;
-    padding-left: 100px;
-}
 
 .schools {
     background: rgb(255, 255, 255);
     color: #000000;
-    text-align: left;
     display: grid;
-    grid-template-columns: 40% 50%;
+    grid-template-columns: 40% 60%;
     position: relative;
     border-radius: 10px;
     height: auto;
@@ -285,12 +289,12 @@
 }
 
 .schools-details {
-    margin-left: -100px;
+    margin-left: -50px;
 }
 
 .schools img {
     height: auto;
-    max-width: 50%;
+    max-width: 60%;
     padding: 15px;
     border-radius: 18px;
     filter: saturate(110%);
@@ -355,9 +359,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
     margin-left: 50%;
-    margin-top: -8%;
+    margin-top: 5%;
+}
+
+.download-section .fa-solid {
+    padding: 5px;
 }
 
 .download-cv {
@@ -430,86 +437,24 @@
 }
 
 
-
-
-
-/* Education grid */
-.education-grid {
-    display: grid;
-    grid-template-columns: 90%;
-    position: relative;
-}
-
-.edu {
-    /* background: white; */
-    border-radius: 10px;
-    height: auto;
-    min-width: 100%;
-    left: -30%;
-    top: 30%;
-    position: relative;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1)) saturate(70%) brightness(80%);
-}
-
 /* Projects */
-
-
-.bar-1 {
-    animation: bar1 .2s linear infinite;
+.project-section {
+    width: 100%;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    color: rgb(71, 154, 255);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.bar-2 {
-    animation: bar2 .3s linear infinite;
-    left: 15px;
+.project-section p {
+    font-size: 28px;
 }
 
-.bar-3 {
-    animation: bar3 .4s linear infinite;
-    left: 30px;
+.project-section:hover {
+    filter: saturate(10%);
 }
-
-@keyframes bar1 {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 10px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
-@keyframes bar2 {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 10px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
-@keyframes bar3 {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 10px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
 
 iframe {
     border-radius: 20px;

@@ -10,7 +10,7 @@
 }
 
 .open {
-    right: 50px;
+    left: 50px;
 }
 
 .close {
@@ -193,10 +193,11 @@
 
 .text-image {
     display: grid;
-    grid-template-columns: 50% 80%;
-    grid-template-rows: 100% 100%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 50px;
     position: relative;
     height: 350px;
+    margin-bottom: 20px;
 }
 
 .text-image p {
@@ -209,8 +210,8 @@
 
 .welcome {
     position: relative;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     transition: .5s;
     background: rgb(137, 119, 241);
