@@ -6,24 +6,27 @@ const inside = document.querySelectorAll(".menu-one");
 const insideChild = document.querySelectorAll(".menu-inside");
 const header = document.querySelector(".header");
 const sideNav = document.querySelector(".side-nav");
+const sideNavItems = document.querySelectorAll(".side-nav a");
 const content = document.querySelector(".content");
 const textImage = document.querySelector(".text-image");
 const body = document.querySelector("body");
 
 inside[0].addEventListener("click", () => {
   sideNav.style.left = "0px";
-  // textImage.style.gridTemplateColumns = "50% 70%";
   body.style.overflow = "hidden";
 });
 
 inside[1].addEventListener("click", () => {
   sideNav.style.left = "-200px";
-  // textImage.style.gridTemplateColumns = "40% 90%";
-
   body.style.overflow = "auto";
 });
 
-// CV download
+sideNavItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    sideNav.style.left = "-200px";
+    body.style.overflow = "auto";
+  });
+});
 
 const loadDownload = document.querySelectorAll(".btn-load");
 
@@ -45,7 +48,7 @@ function download() {
   anchor.click();
   document.body.removeChild(anchor);
 }
-// View CV
+
 document.getElementById("view").addEventListener("click", () => {
   loadDownload[1].style.visibility = "visible";
   setTimeout(() => {
