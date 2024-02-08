@@ -216,9 +216,8 @@
     transition: .5s;
     background: rgb(137, 119, 241);
     background-image: url(../images/img2x.png);
-    background-position-y: -20px;
     background-position-x: center;
-    background-size: 150%;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
     overflow: hidden;
@@ -230,9 +229,7 @@
 .welcome:hover {
     /* transform: scale(0.9); */
     background-image: url(../images/img2x.png);
-    background-position: center;
-    background-size: 150%;
-    background-position-y: -2px;
+    background-size: cover;
     border-radius: 30% 10px 10px 10px;
     filter: grayscale(60%);
 }
