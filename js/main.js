@@ -13,18 +13,15 @@ const body = document.querySelector("body");
 
 inside[0].addEventListener("click", () => {
   sideNav.style.left = "0px";
-  body.style.overflow = "hidden";
 });
 
 inside[1].addEventListener("click", () => {
   sideNav.style.left = "-200px";
-  body.style.overflow = "auto";
 });
 
 sideNavItems.forEach((item) => {
   item.addEventListener("click", () => {
     sideNav.style.left = "-200px";
-    body.style.overflow = "auto";
   });
 });
 
