@@ -7,9 +7,8 @@ const message = document.querySelector(".message");
 
 const randomNumber = Math.floor(Math.random() * 100);
 
-emailAddress[1].addEventListener("change", InvalidEmail);
-const email =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+emailAddress[1].addEventListener("input", InvalidEmail);
+const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 function InvalidEmail() {
   if (!emailAddress[1].value.match(email)) {

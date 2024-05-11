@@ -6,22 +6,29 @@ const inside = document.querySelectorAll(".menu-one");
 const insideChild = document.querySelectorAll(".menu-inside");
 const header = document.querySelector(".header");
 const sideNav = document.querySelector(".side-nav");
-const sideNavItems = document.querySelectorAll(".side-nav a");
 const content = document.querySelector(".content");
 const textImage = document.querySelector(".text-image");
 const body = document.querySelector("body");
+const hobbies = document.querySelectorAll(".welcome");
+const details = document.querySelector("#details");
 
-inside[0].addEventListener("click", () => {
-  sideNav.style.left = "0px";
-});
+const linkNames = ["Home", "About", "Skills", "Portfolio", "Contact"];
+const linkArray = ["#home", "#about", "#skills", "#portfolio", "#contact"];
 
-inside[1].addEventListener("click", () => {
-  sideNav.style.left = "-200px";
-});
+for (let i = 0; i < linkNames.length; i++) {
+  const link = document.createElement("a");
+  link.innerHTML = linkNames[i];
+  link.classList.add("link");
+  link.href = linkArray[i];
+  sideNav.appendChild(link);
+}
 
-sideNavItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    sideNav.style.left = "-200px";
+//Hobbies
+hobbies.forEach((hobby) => {
+  hobby.addEventListener("click", () => {
+    location.href = "#details";
+    details.style.display = "block";
+    details.innerHTML = `<h1>bg= ${hobby.style.backgroundImage.toString()}</h1>` + hobby.innerHTML;
   });
 });
 

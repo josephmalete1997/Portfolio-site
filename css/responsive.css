@@ -114,7 +114,7 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-padding: 5rem;
   }
 
@@ -393,7 +393,7 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-padding: 5rem;
   }
 
@@ -675,7 +675,7 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-padding: 5rem;
   }
 
