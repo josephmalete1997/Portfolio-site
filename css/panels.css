@@ -1,334 +1,236 @@
-/* Opening */
-.open-scene {
-    height: 100vh;
-    width: 100%;
-    background: rgb(0, 0, 0);
-    z-index: 200;
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0px;
-    transition: 1s;
-}
-
-.intro {
-    font-weight: 100;
-    font-size: 26px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.blink {
-    background: rgb(248, 248, 248);
-    animation: blink;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    font-size: 26px;
-}
-
-.intro-text {
-    width: 40%;
-    height: 200px;
-    color: white;
-    top: -80px;
-    position: relative;
-}
-
-/* Loading */
-.loading {
-    width: 500px;
-    height: 20px;
-    border: 2px solid rgb(255, 255, 255);
-    position: relative;
-    top: -120px;
-    display: flex;
-    flex-direction: row;
-}
-
-.bar {
-    background: rgb(255, 255, 255);
-    width: 6px;
-    height: 16px;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 3px;
-}
-
-/* Skip */
-.skip {
-    color: white;
-    height: 30px;
-    background: red;
-    font-size: 24px;
-    padding: 0px 20px;
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    cursor: pointer;
-    animation: skip;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-.skip::after {
-    content: "";
-    display: block;
-    height: 20px;
-    width: 20px;
-    background: rgb(255, 0, 0);
-    font-size: 24px;
-    position: absolute;
-    top: 5px;
-    right: -5px;
-    transform: rotate(45deg);
-}
-
-@keyframes skip {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
 /* skills */
 
-
 .panel-one {
-    height: 200px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-column-gap: 1%;
+  height: 200px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 1%;
 }
 
 .panel-skills {
-    position: relative;
+  position: relative;
+  background: rgb(255, 255, 255);
+  padding: 20px;
 }
 
 .skillsPanel {
-    height: 60px;
-    width: 80%;
-    padding-top: 10px;
-    left: 100px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    border-bottom: .5px dotted #989898;
+  height: 50px;
+  width: 80%;
+  padding-top: 10px;
+  left: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+.skillsPanel:hover .fa-brands,
+.skillsPanel:hover .fa-solid {
+  color: #b8b8b8;
+  transition: 1s;
 }
 
 .skillsPanel div {
-    color: rgb(71, 71, 71);
-    font-size: 24px;
+  font-size: 24px;
 }
 
 /* skillsPanel */
 .sub-title {
-    width: 400px;
-    font-size: 36px;
-    text-align: left;
-    padding: 20px 50px;
-    position: relative;
-    margin-bottom: 0px;
-    margin-top: 10px;
+  width: 400px;
+  font-size: 36px;
+  text-align: left;
+  padding: 20px 50px;
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
-
 
 /* blink */
 
-
 @keyframes blink {
-    0% {
-        visibility: hidden;
-    }
+  0% {
+    visibility: hidden;
+  }
 
-    50% {
-        visibility: hidden;
-    }
+  50% {
+    visibility: hidden;
+  }
 
-    100% {
-        visibility: visible;
-    }
+  100% {
+    visibility: visible;
+  }
 }
 
-
 .schools-items {
-    width: 100%;
+  width: 100%;
 }
 
 .schools {
-    background: rgb(255, 255, 255);
-    color: #000000;
-    display: grid;
-    grid-template-columns: 20% 70%;
-    grid-column-gap: 20px;
-    position: relative;
-    height: auto;
-    padding: 5px 5px 10px 0px;
-    margin: 5px;
-    /* border-bottom: 1px dotted; */
+  background: rgb(255, 255, 255);
+  color: #000000;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-column-gap: 20px;
+  position: relative;
+  height: auto;
+  padding: 5px 5px 10px 0px;
+  margin: 5px;
+  /* border-bottom: 1px dotted; */
 }
 
 .schools-details {
-    left: 50px;
+  left: 50px;
 }
 
 .schools-details div:nth-child(1) {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .schools-details div:nth-child(2) {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .schools-details div:nth-child(3) {
-    font-size: 20px;
-    color: #4a4a4a;
-    margin-top: 10px;
+  font-size: 20px;
+  color: #4a4a4a;
+  margin-top: 10px;
 }
 
 .schools img {
-    height: auto;
-    max-width: 100%;
-    filter: saturate(50%);
-    position: relative;
+  height: auto;
+  max-width: 100%;
+  filter: saturate(50%);
+  position: relative;
 }
 
 .status {
-    top: 10px;
-    position: relative;
-    font-weight: 600;
-    padding: 5px 10px;
-
+  top: 10px;
+  position: relative;
+  font-weight: 600;
+  padding: 5px 10px;
 }
 
 .complete {
-    color: rgb(0, 166, 8);
+  color: rgb(0, 166, 8);
 }
 
 .incomplete {
-    color: rgb(231, 16, 16);
+  color: rgb(231, 16, 16);
 }
 
 .in-progress {
-    color: rgb(204, 167, 0);
+  color: rgb(204, 167, 0);
 }
 
-
 .download-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50%;
-    margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50%;
+  margin-top: -2%;
 }
 
 .download-section .fa-solid {
-    padding: 5px;
+  padding: 5px;
 }
 
 .download-cv {
-    color: rgb(255, 255, 255);
-    bottom: 40px;
-    padding: 5px 10px 5px 5px;
-    cursor: pointer;
-    border: 1px solid rgb(0, 0, 0);
-    transition: .1s;
-    background: rgb(0, 0, 0);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+  color: rgb(255, 255, 255);
+  bottom: 40px;
+  padding: 5px 10px 5px 5px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.1s;
+  background: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 .d {
-    /* right: 120px; */
+  /* right: 120px; */
 }
 
 .v {
-    background: transparent;
-    color: rgb(0, 0, 0);
-    left: 10px;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  left: 10px;
 }
 
 .d:hover {
-    color: rgb(0, 0, 0);
-    background: transparent;
+  color: rgb(0, 0, 0);
+  background: transparent;
 }
 
-.d:hover .btn-load {}
+.d:hover .btn-load {
+}
 
-.v:hover .btn-load {}
+.v:hover .btn-load {
+}
 
 .v:hover {
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
 }
 
 /* Load bars */
 
 .btn-load {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    left: 5px;
-    border: 3px solid transparent;
-    border-top: 3px solid;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    visibility: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  border: 3px solid transparent;
+  border-top: 3px solid;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  visibility: hidden;
 }
 
 #send {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 /* Projects */
 .project-section {
-    width: 100%;
-    height: auto;
-    background: white;
-    border-radius: 10px;
-    color: rgb(71, 154, 255);
-    padding-bottom: 100px;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  color: rgb(71, 154, 255);
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 .project-section p {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .project-section:hover {
-    filter: saturate(10%);
+  filter: saturate(10%);
 }
 
 iframe {
-    border-radius: 20px;
-    border: 2px solid white;
+  border-radius: 20px;
+  border: 2px solid white;
 }

@@ -9,6 +9,22 @@
   display: block;
 }
 
+/* Skills new */
+
+.skills-main {
+  display: flex;
+  width: 100%;
+}
+
+.skills-graphics {
+  flex: 1;
+  background: #0ca8f0;
+  height: 100%;
+}
+
+#skills {
+  flex: 1;
+}
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   body {
@@ -44,7 +60,6 @@
   .mobile-about-text {
     text-align: center;
   }
-
 
   .mobile-about-text h1 {
     font-family: cursive;
@@ -88,7 +103,6 @@
   .header .nav a .fa {
     font-size: 18px;
   }
-
 
   .contact-me {
     flex-direction: column;
@@ -137,7 +151,6 @@
   .d {
     position: relative;
   }
-
 
   .hobbies {
     width: 100%;
@@ -250,7 +263,7 @@
     font-weight: 600;
     padding: 5px 10px;
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
     border-radius: 20px;
   }
 
@@ -275,7 +288,6 @@
     display: block;
     width: 95%;
     color: var(--orange);
-
   }
 
   #about,
@@ -290,10 +302,7 @@
   }
 }
 
-
-@media screen and (min-width: 350px) and (max-width: 800px),
-(max-width: 98%) {
-
+@media screen and (min-width: 350px) and (max-width: 800px), (max-width: 98%) {
   /* Head and nav */
   body {
     overflow-y: auto;
@@ -329,13 +338,13 @@
     text-align: center;
   }
 
-
   .mobile-about-text h1 {
     font-family: cursive;
     color: #0ca8f0;
   }
 
-  .mobile-about-text p {}
+  .mobile-about-text p {
+  }
 
   .mobile-about img {
     max-width: 60%;
@@ -367,7 +376,6 @@
   .header .nav a .fa {
     font-size: 18px;
   }
-
 
   .contact-me {
     flex-direction: column;
@@ -417,7 +425,6 @@
   .d {
     position: relative;
   }
-
 
   .hobbies {
     width: 100%;
@@ -535,7 +542,7 @@
     font-weight: 600;
     padding: 5px 10px;
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
     border-radius: 20px;
   }
 
@@ -560,7 +567,6 @@
     display: block;
     width: 95%;
     color: var(--orange);
-
   }
 
   #about,
@@ -575,9 +581,7 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 349px),
-(max-width: 98%) {
-
+@media screen and (min-width: 300px) and (max-width: 349px), (max-width: 98%) {
   /* Head and nav */
   body {
     overflow-y: auto;
@@ -612,7 +616,6 @@
   .mobile-about-text {
     text-align: center;
   }
-
 
   .mobile-about-text h1 {
     font-family: cursive;
@@ -649,7 +652,6 @@
   .header .nav a .fa {
     font-size: 18px;
   }
-
 
   .contact-me {
     flex-direction: column;
@@ -699,7 +701,6 @@
   .d {
     position: relative;
   }
-
 
   .hobbies {
     width: 100%;
@@ -818,7 +819,7 @@
     font-weight: 600;
     padding: 5px 10px;
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
     border-radius: 20px;
   }
 
@@ -843,7 +844,6 @@
     display: block;
     width: 95%;
     color: var(--orange);
-
   }
 
   #about,
@@ -858,7 +858,7 @@
   }
 }
 
-@media screen and (min-width:450px) and (max-width:700px) {
+@media screen and (min-width: 450px) and (max-width: 700px) {
   .download-section {
     width: 80%;
     margin-top: 0%;
@@ -866,7 +866,7 @@
   }
 }
 
-@media screen and (min-width:450px) and (max-width:700px) {
+@media screen and (min-width: 450px) and (max-width: 700px) {
   .download-section {
     width: 80%;
     margin-top: 0%;
@@ -874,7 +874,7 @@
   }
 }
 
-@media screen and (min-width:850px) and (max-width:890px) {
+@media screen and (min-width: 850px) and (max-width: 890px) {
   .download-section {
     width: 50%;
     margin-top: 7%;
@@ -882,7 +882,7 @@
   }
 }
 
-@media screen and (min-width:891px) and (max-width:990px) {
+@media screen and (min-width: 891px) and (max-width: 990px) {
   .download-section {
     width: 50%;
     margin-top: 5%;
@@ -890,7 +890,7 @@
   }
 }
 
-@media screen and (min-width:1000px) and (max-width:1024px) {
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
   .download-section {
     width: 50%;
     margin-top: -2%;
@@ -898,7 +898,7 @@
   }
 }
 
-@media screen and (min-width:1025px) and (max-width:1080px) {
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
   .download-section {
     width: 50%;
     margin-top: 10%;
@@ -945,7 +945,7 @@
   }
 }
 
-@media screen and (min-width:1081px) and (max-width:1250px) {
+@media screen and (min-width: 1081px) and (max-width: 1250px) {
   .download-section {
     width: 50%;
     margin-top: 5%;

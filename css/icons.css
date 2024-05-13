@@ -2,17 +2,19 @@
   /* color: rgb(255, 217, 0); */
 }
 
-
 .skillsPanel .fa,
 .skillsPanel .fa-regular,
 .skillsPanel .fa-solid,
 .skillsPanel .fa-brands {
-  color: rgb(93, 93, 93);
-  font-size: 50px;
+  color: rgb(90, 125, 170);
+  font-size: 32px;
   margin-right: 20px;
+  padding: 10px;
+  width: 40px;
 }
 
-.fa-gear {}
+.fa-gear {
+}
 
 .left {
   font-size: 60px;

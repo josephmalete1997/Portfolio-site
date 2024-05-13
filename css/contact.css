@@ -2,7 +2,7 @@
   color: white;
   width: 100%;
   height: auto;
-  margin-top: .5%;
+  margin-top: 0.5%;
   display: none;
   text-align: center;
   position: relative;
@@ -24,7 +24,6 @@
   flex-direction: column;
 }
 
-
 label {
   font-size: 24px;
   margin: 5px 0px 10px 0px;
@@ -43,7 +42,6 @@ label {
 input:focus-visible {
   border: 1px solid;
 }
-
 
 textarea {
   height: 100px;
@@ -76,9 +74,8 @@ form {
 }
 
 .send-button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
-
 
 .mail {
   display: flex;
