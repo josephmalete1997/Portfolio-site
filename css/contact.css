@@ -57,6 +57,7 @@ form {
   position: relative;
   padding: 50px;
   background: white;
+  box-shadow: 1px 1px 20px rgb(0, 0, 0, .1);
 }
 
 ::placeholder {

@@ -50,44 +50,13 @@ body {
 
 .title {
   z-index: 10;
-  width: 300px;
   font-size: 60px;
   right: 0px;
   font-weight: 300;
   position: relative;
-  color: rgb(123, 123, 123);
-  border-bottom: 1px solid;
+  color: rgb(0, 0, 0);
 }
 
-.title::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  z-index: 10;
-  font-size: 60px;
-  left: -10px;
-  bottom: -4px;
-  font-weight: 300;
-  position: absolute;
-  color: rgb(123, 123, 123);
-  border: 1px solid;
-  transform: rotate(45deg);
-}
-
-.title::after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  z-index: 10;
-  font-size: 60px;
-  right: -10px;
-  bottom: -4px;
-  font-weight: 300;
-  position: absolute;
-  color: rgb(123, 123, 123);
-  border: 1px solid;
-  transform: rotate(45deg);
-}
 
 .fa {
   color: rgb(215, 241, 255);
@@ -150,7 +119,6 @@ body {
 }
 
 #home-text p:nth-child(2) {
-  width: 500px;
   padding: 5px;
   margin-top: -40px;
   position: relative;
@@ -164,7 +132,6 @@ body {
 }
 
 #home-text p:nth-child(4) {
-  width: 500px;
   padding: 5px;
   margin-top: -15px;
   position: relative;
@@ -175,7 +142,7 @@ body {
   margin-top: 400px;
   left: 0px;
   position: absolute;
-  font-size: 55px;
+  font-size: 45px;
   color: rgb(49, 45, 45);
   filter: grayscale(0);
 }
@@ -246,6 +213,16 @@ body {
 #portfolio {
   display: grid;
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* .skills-row{
+  display: flex;
+  flex-direction: row;
+} */
 
 .description {
   color: white;

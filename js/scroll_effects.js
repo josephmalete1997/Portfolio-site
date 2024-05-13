@@ -23,24 +23,18 @@ function showAlert() {
     const rect = section.getBoundingClientRect();
     const home = document.querySelector("#home").getBoundingClientRect();
     const about = document.querySelector("#about").getBoundingClientRect();
-    const interestsAndHobbies = document
-      .querySelector(".interest-and-hobbies")
-      .getBoundingClientRect();
+    const interestsAndHobbies = document.querySelector(".interest-and-hobbies").getBoundingClientRect();
     const imageAndText = document.querySelector(".text-image");
     const hobby = document.querySelector(".panel-one");
     imageAndText.style.transition = ".5s";
 
-    about.top < 200
-      ? (imageAndText.style.transform = "scale(1)")
-      : (imageAndText.style.transform = "scale(0)");
+    about.top < 200 ? (imageAndText.style.transform = "scale(1)") : (imageAndText.style.transform = "scale(0)");
 
     hobby.style.transition = ".5s";
-    interestsAndHobbies.top < 300
-      ? (hobby.style.transform = "scale(1)")
-      : (hobby.style.transform = "scale(0)");
+    interestsAndHobbies.top < 300 ? (hobby.style.transform = "scale(1)") : (hobby.style.transform = "scale(0)");
 
     if (home.top === 0) {
-      document.querySelector(".side-nav").style.top = "-200px";
+      document.querySelector(".side-nav").style.top = "-100px";
     } else {
       document.querySelector(".side-nav").style.top = "0px";
     }
