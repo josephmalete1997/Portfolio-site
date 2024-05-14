@@ -43,7 +43,6 @@ body {
   border-left: 4px solid rgb(93, 196, 110);
   border-radius: 4px;
   background: rgb(244, 253, 255);
-  box-shadow: 4px 4px 5px rgb(0, 0, 0, 0.13);
   padding-top: 10px;
   padding-bottom: 10px;
 }

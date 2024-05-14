@@ -94,7 +94,6 @@
   height: 350px;
   margin-bottom: 20px;
   background: white;
-  box-shadow: 1px 1px 20px rgb(0, 0, 0, .1);
   padding: 20px;
 }
 
@@ -108,7 +107,7 @@
 
 .welcome {
   position: relative;
-  height: 90%;
+  height: 80%;
   width: 90%;
   z-index: 1;
   transition: 0.5s;
@@ -143,7 +142,6 @@
 
 .hobbies {
   padding: 10px;
-  box-shadow: 1px 1px 20px rgb(0, 0, 0, .1);
 }
 
 .hobbies:nth-child(1) {

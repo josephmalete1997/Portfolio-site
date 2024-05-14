@@ -13,13 +13,11 @@
   flex-direction: column;
 }
 
-
 .panel-skills {
   position: relative;
   padding: 20px;
-  box-shadow: 1px 1px 20px rgb(0, 0, 0, .1);
   margin: 10px;
-  background: white;
+  background: rgb(255, 255, 255, .8);
 }
 
 .skillsPanel {
@@ -112,7 +110,7 @@ td:nth-child(1) {}
   display: grid;
   grid-template-columns: 40% 40%;
   column-gap: 5%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .download-section .fa-solid {
@@ -124,7 +122,7 @@ td:nth-child(1) {}
   bottom: 40px;
   padding: 5px 10px 5px 5px;
   cursor: pointer;
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   transition: 0.4s;
   background: rgb(0, 0, 0);
   position: relative;
