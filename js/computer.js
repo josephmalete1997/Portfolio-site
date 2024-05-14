@@ -1,5 +1,4 @@
 const keyboard = document.querySelector(".computer .keyboard");
-const screen = document.querySelector(".computer .screen");
 const computer = document.querySelector(".computer");
 
 const keyboardAlphabet = [
