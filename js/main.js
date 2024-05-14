@@ -23,8 +23,9 @@ const linkNames = [
             src="css/icons/github.svg" alt="Github"></a>
 </div>
 <div class="socials-inner">
-    <a href="https://www.instagram.com/joseph_malete/" target="_blank"><img
-            src="css/icons/instagram.svg" alt="Instagram"></a>
+<a href="https://www.linkedin.com/in/joseph-jacob-malete-a5b263276/" target="_blank"
+><img src="css/icons/linkedin.svg" alt="linkedin"
+/></a>
 </div>
 </div>`,
   "Home",
@@ -51,9 +52,7 @@ hobbies.forEach((hobby) => {
   hobby.addEventListener("click", () => {
     location.href = "#details";
     details.style.display = "block";
-    details.innerHTML =
-      `<h1>bg= ${hobby.style.backgroundImage.toString()}</h1>` +
-      hobby.innerHTML;
+    details.innerHTML = `<h1>bg= ${hobby.style.backgroundImage.toString()}</h1>` + hobby.innerHTML;
   });
 });
 
