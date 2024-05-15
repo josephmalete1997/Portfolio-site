@@ -89,9 +89,9 @@
   width: 100%;
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-column-gap: 50px;
+  grid-column-gap: 20px;
   position: relative;
-  height: 350px;
+  height: 250px;
   margin-bottom: 20px;
   background: white;
   padding: 20px;
@@ -103,12 +103,11 @@
   text-align: justify;
   font-size: 20px;
   font-weight: lighter;
+  top: -50px;
 }
 
 .welcome {
   position: relative;
-  height: 80%;
-  width: 90%;
   z-index: 1;
   transition: 0.5s;
   background-position-x: center;
@@ -117,17 +116,22 @@
   background-image: url(../sub.jpg);
 }
 
+.photo {
+  width: 100%;
+  height: 90%;
+  background-size: 60%;
+}
+
 .over-layer {
   width: 100%;
   height: 20%;
   position: absolute;
   left: 0px;
-  opacity: 0.5;
   transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
+  opacity: 1;
   bottom: 0%;
   background: white;
   font-size: 24px;

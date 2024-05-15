@@ -67,6 +67,10 @@
     top: -100px;
 }
 
+.project-details .buttons a {
+    text-decoration: none;
+}
+
 .project-details button:nth-child(1),
 .project-details button:nth-child(2) {
     background: rgb(0, 0, 0);
